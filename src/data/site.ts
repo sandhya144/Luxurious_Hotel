@@ -1,3 +1,30 @@
+import gallery1 from '../assets/WhatsApp Image 1.jpeg';
+import gallery2 from '../assets/WhatsApp Image 2.jpeg';
+import gallery3 from '../assets/WhatsApp Image 3.jpeg';
+import gallery4 from '../assets/WhatsApp Image 4.jpeg';
+import gallery5 from '../assets/WhatsApp Image 5.jpeg';
+import gallery6 from '../assets/WhatsApp Image 6.jpeg';
+import gallery7 from '../assets/WhatsApp Image 7.jpeg';
+import gallery8 from '../assets/WhatsApp Image 8.jpeg';
+import gallery9 from '../assets/WhatsApp Image 9.jpeg';
+import gallery10 from '../assets/WhatsApp Image 10.jpeg';
+import gallery11 from '../assets/WhatsApp Image 11.jpeg';
+import gallery12 from '../assets/WhatsApp Image 12.jpeg';
+import gallery13 from '../assets/WhatsApp Image 13.jpeg';
+import gallery14 from '../assets/WhatsApp Image 14.jpeg';
+import gallery17 from '../assets/WhatsApp Image 17.jpeg'
+import gallery16 from '../assets/WhatsApp Image 16.jpeg'
+import building1 from '../assets/building 1.jpeg'
+
+import temple from '../assets/temple.jpg'
+import ghat from '../assets/ghat.jpg'
+import ganga from '../assets/ganga.jpg'
+import sarnath from '../assets/sarnath.jpg'
+import corridor from '../assets/corridor.jpg'
+import street from '../assets/street.jpg'
+
+
+
 export type Room = {
   id: string;
   name: string;
@@ -20,8 +47,7 @@ export const rooms: Room[] = [
     blurb:
       'A calm, light-filled room with a comfortable queen bed and everything you need to settle in after a day at the temple. Quiet by design, with daily housekeeping that keeps things spotless.',
     amenitiesInline: 'AC, free WiFi, hot water, daily housekeeping',
-    image:
-      'https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: gallery6,
     alt: 'Deluxe room interior with a neatly made bed and warm ambient lighting',
   },
   {
@@ -33,8 +59,7 @@ export const rooms: Room[] = [
     blurb:
       'More room to breathe, with a generous bed, a flat-screen TV, and a window that opens onto the city. Room service runs late, so an evening chai or a light dinner is always a call away.',
     amenitiesInline: 'Flat-screen TV, room service, city view',
-    image:
-      'https://images.pexels.com/photos/8135248/pexels-photo-8135248.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: gallery8,
     alt: 'Super Deluxe room with plush bedding and soft ambient lighting',
   },
   {
@@ -46,8 +71,7 @@ export const rooms: Room[] = [
     blurb:
       'Two connecting rooms built for families travelling together — parents on one side, children on the other, with a door between for peace of mind. Extra beds are available, and the kitchenette access makes mornings easier.',
     amenitiesInline: 'Two connecting rooms, extra beds available, kitchenette access',
-    image:
-      'https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: gallery10,
     alt: 'Family suite with two comfortable beds and warm decor',
   },
   {
@@ -59,140 +83,97 @@ export const rooms: Room[] = [
     blurb:
       'A thoughtful room for guests who need to work or stay connected — a proper desk, fast WiFi, and premium toiletries. Quiet, well-lit, and set up so you can take a call and then walk to the temple in minutes.',
     amenitiesInline: 'Work desk, fast WiFi, premium toiletries',
-    image:
-      'https://images.pexels.com/photos/6585619/pexels-photo-6585619.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: gallery5,
     alt: 'Executive room with a wooden desk, warm lamp and comfortable bed',
   },
-  {
-    id: 'temple-view',
-    name: 'Temple View Room',
-    priceFrom: 4200,
-    size: '240 sq ft',
-    guests: 2,
-    blurb:
-      'Our most-requested room — a partial view toward the temple side, with morning light that makes the whole stay feel special. Breakfast is included, served fresh, so you can head out to the ghats already looked after.',
-    amenitiesInline: 'Partial temple-side view, breakfast included',
-    image:
-      'https://images.pexels.com/photos/3755590/pexels-photo-3755590.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    alt: 'Temple View room with elegant white linen and soft pillows',
-  },
+  // {
+  //   id: 'temple-view',
+  //   name: 'Temple View Room',
+  //   priceFrom: 4200,
+  //   size: '240 sq ft',
+  //   guests: 2,
+  //   blurb:
+  //     'Our most-requested room — a partial view toward the temple side, with morning light that makes the whole stay feel special. Breakfast is included, served fresh, so you can head out to the ghats already looked after.',
+  //   amenitiesInline: 'Partial temple-side view, breakfast included',
+  //   image:
+  //     'https://images.pexels.com/photos/3755590/pexels-photo-3755590.jpeg?auto=compress&cs=tinysrgb&w=1400',
+  //   alt: 'Temple View room with elegant white linen and soft pillows',
+  // },
 ];
 
-export const heroSlides = [
-  {
-    image:
-      'https://images.pexels.com/photos/8011069/pexels-photo-8011069.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    alt: 'Hotel exterior facade in warm afternoon light',
-  },
-  {
-    image:
-      'https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    alt: 'Deluxe room interior with a comfortable bed and ambient lighting',
-  },
-  {
-    image:
-      'https://images.pexels.com/photos/14036251/pexels-photo-14036251.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    alt: 'Hotel reception desk with warm, welcoming lighting',
-  },
-  {
-    image:
-      'https://images.pexels.com/photos/9089767/pexels-photo-9089767.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    alt: 'A plated breakfast of fresh fruit, eggs and warm bread',
-  },
-  {
-    image:
-      'https://images.pexels.com/photos/33803745/pexels-photo-33803745.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    alt: 'Heritage hotel corridor with elegant arched architecture',
-  },
-];
 
 export const heroPoster =
   'https://images.pexels.com/photos/8112552/pexels-photo-8112552.jpeg?auto=compress&cs=tinysrgb&w=1920';
 
 export const glimpses = [
   {
-    image:
-      'https://images.pexels.com/photos/2736384/pexels-photo-2736384.jpeg?auto=compress&cs=tinysrgb&w=900',
-    alt: 'A hotel room detail with soft white linen and a bedside lamp',
+    image: building1,
+    alt: "Exterior",
+  },
+   {
+    image: gallery5,
+    alt: "Room",
   },
   {
-    image:
-      'https://images.pexels.com/photos/5865690/pexels-photo-5865690.jpeg?auto=compress&cs=tinysrgb&w=900',
-    alt: 'A fresh breakfast spread on a wooden table',
+    image: gallery16,
+    alt: "Restaurant",
   },
   {
-    image:
-      'https://images.pexels.com/photos/38023850/pexels-photo-38023850.jpeg?auto=compress&cs=tinysrgb&w=900',
-    alt: 'Boats on the Ganges with the Varanasi ghats behind them',
+    image: gallery6,
+    alt: "Lobby",
   },
-  {
-    image:
-      'https://images.pexels.com/photos/7821349/pexels-photo-7821349.jpeg?auto=compress&cs=tinysrgb&w=900',
-    alt: 'Hotel reception area with warm lighting and decor',
-  },
+  
+  // {
+  //   image: gallery14,
+  //   alt: "Exterior",
+  // },
+  
 ];
 
 export const galleryImages = [
   {
-    image:
-      'https://images.pexels.com/photos/8011069/pexels-photo-8011069.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Hotel exterior facade in the afternoon',
+    image: building1,
+    alt: "Exterior",
   },
   {
-    image:
-      'https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Deluxe room with a comfortable bed',
+    image: gallery14,
+    alt: "Exterior",
   },
   {
-    image:
-      'https://images.pexels.com/photos/14036251/pexels-photo-14036251.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Hotel reception desk',
+    image: gallery1,
+    alt: "Exterior",
   },
   {
-    image:
-      'https://images.pexels.com/photos/9089767/pexels-photo-9089767.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Plated breakfast with fresh fruit and eggs',
+    image: gallery5,
+    alt: "Exterior",
   },
   {
-    image:
-      'https://images.pexels.com/photos/8112552/pexels-photo-8112552.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Varanasi waterfront along the Ganges at twilight',
+    image: gallery6,
+    alt: "Exterior",
+  },
+
+  {
+    image: gallery8,
+    alt: "Exterior",
   },
   {
-    image:
-      'https://images.pexels.com/photos/36613136/pexels-photo-36613136.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Ganga Aarti ritual with fire lamps at the Varanasi ghats',
+    image: gallery17,
+    alt: "Exterior",
   },
   {
-    image:
-      'https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Family suite with two comfortable beds',
+    image: gallery10,
+    alt: "Exterior",
   },
+  
   {
-    image:
-      'https://images.pexels.com/photos/7166637/pexels-photo-7166637.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Elegant bathroom with marble walls and modern fixtures',
+    image: gallery11,
+    alt: "Exterior",
   },
-  {
-    image:
-      'https://images.pexels.com/photos/33803745/pexels-photo-33803745.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Heritage hotel corridor with arched architecture',
+   {
+    image: gallery7,
+    alt: "Exterior",
   },
-  {
-    image:
-      'https://images.pexels.com/photos/31149148/pexels-photo-31149148.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'A narrow Varanasi alley with colourful street art',
-  },
-  {
-    image:
-      'https://images.pexels.com/photos/6585619/pexels-photo-6585619.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Executive room with a wooden desk and warm lamp',
-  },
-  {
-    image:
-      'https://images.pexels.com/photos/3755590/pexels-photo-3755590.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Temple View room with elegant white linen',
-  },
+  
 ];
 
 export const nearby = [
@@ -200,48 +181,42 @@ export const nearby = [
     name: 'Kashi Vishwanath Temple',
     distance: '800m',
     note: 'One of the holiest Shiva temples in India.',
-    image:
-      'https://images.pexels.com/photos/5103732/pexels-photo-5103732.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: temple,
     alt: 'Carved stone facade of a Hindu temple',
   },
   {
     name: 'Dashashwamedh Ghat',
     distance: '~1 km',
     note: "The city's most iconic ghat.",
-    image:
-      'https://images.pexels.com/photos/17869844/pexels-photo-17869844.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: ghat,
     alt: 'Historic Varanasi ghat with boats on the Ganges',
   },
   {
     name: 'Ganga Aarti',
     distance: '~1 km',
     note: 'The evening fire ceremony on the riverbank.',
-    image:
-      'https://images.pexels.com/photos/35345039/pexels-photo-35345039.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: ganga,
     alt: 'Ganga Aarti ceremony with fire lamps along the Ganges',
   },
   {
     name: 'Vishwanath Corridor',
     distance: '~900m',
     note: 'The temple-to-ghat pilgrim walkway.',
-    image:
-      'https://images.pexels.com/photos/37626184/pexels-photo-37626184.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: corridor,
     alt: 'Ancient temple architecture at sunset',
   },
   {
     name: 'Sarnath',
     distance: '~10 km',
     note: 'Where Buddha gave his first sermon.',
-    image:
-      'https://images.pexels.com/photos/31969428/pexels-photo-31969428.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: sarnath,
     alt: 'Ancient sandstone temple complex',
   },
   {
-    name: 'Banaras shopping streets',
+    name: 'Banaras ancient streets',
     distance: '~1.2 km',
     note: "Silk, handicrafts, and the old city's lanes.",
-    image:
-      'https://images.pexels.com/photos/34968073/pexels-photo-34968073.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: street,
     alt: 'A vibrant Varanasi market street with vendors and shoppers',
   },
 ];

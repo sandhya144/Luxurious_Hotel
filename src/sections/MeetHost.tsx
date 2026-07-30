@@ -1,9 +1,8 @@
 import Reveal from '@/components/Reveal';
 import { hotel } from '@/data/site';
+import hostImg from "../assets/host 1.jpeg"
 
-const ownerPhoto =
-  'https://images.unsplash.com/photo-1624797432677-6f803a98acb3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fHww';
-
+  
 export default function MeetHost() {
   return (
     <section className="bg-stone/50 py-24 md:py-32">
@@ -12,10 +11,10 @@ export default function MeetHost() {
           <div className="aspect-[4/5] overflow-hidden">
             {/* REPLACE WITH REAL OWNER PHOTO */}
             <img
-              src={ownerPhoto}
+              src={hostImg}
               alt="The owner of The White House Hotel, Varanasi"
               loading="lazy"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover rounded-sm"
             />
           </div>
         </Reveal>

@@ -4,23 +4,24 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Logo from './Logo';
 import { heroSlides, heroPoster } from '@/data/site';
+import herovideo from "../assets/HeroVideo.mp4"
 
 export default function Hero() {
   const reduce = useReducedMotion();
-  const [slide, setSlide] = useState(0);
+  // const [slide, setSlide] = useState(0);
 
-  useEffect(() => {
-    if (reduce) return;
-    const id = setInterval(() => {
-      setSlide((s) => (s + 1) % heroSlides.length);
-    }, 5000);
-    return () => clearInterval(id);
-  }, [reduce]);
+  // useEffect(() => {
+  //   if (reduce) return;
+  //   const id = setInterval(() => {
+  //     setSlide((s) => (s + 1) % heroSlides.length);
+  //   }, 5000);
+  //   return () => clearInterval(id);
+  // }, [reduce]);
 
   return (
     <section id="top" className="relative h-[100svh] w-full overflow-hidden">
       {/* Self-running hotel montage — building, deluxe room, reception, breakfast, room detail */}
-      {heroSlides.map((s, i) => (
+      {/* {heroSlides.map((s, i) => (
         <div
           key={i}
           className="absolute inset-0 transition-opacity duration-[1800ms] ease-in-out"
@@ -39,7 +40,18 @@ export default function Hero() {
             {...(i === 0 ? { 'data-poster': heroPoster } : {})}
           />
         </div>
-      ))}
+      ))} */}
+
+      <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="absolute inset-0 h-full w-full object-cover"
+>
+  <source src={herovideo} type="video/mp4" />
+  Your browser 
+</video>
 
       {/* Legibility scrim */}
       <div className="absolute inset-0 z-[2] bg-charcoal/40" />

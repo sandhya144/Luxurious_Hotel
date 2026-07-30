@@ -13,12 +13,12 @@ export default function Rooms() {
     <main className="bg-ivory pt-28 md:pt-32">
       <Seo
         title="Rooms · The White House Hotel, Varanasi"
-        description="Five room types at The White House Hotel — Deluxe, Super Deluxe, Family Suite, Executive, and Temple View. Clean, comfortable, steps from Kashi Vishwanath Temple."
+        description="Four room types at The White House Hotel — Deluxe, Super Deluxe, Family Suite, Executive, and Temple View. Clean, comfortable, steps from Kashi Vishwanath Temple."
         path="/rooms"
       />
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <SectionHeading eyebrow="Our Rooms" title="Five Rooms, Each Kept Spotless">
+          <SectionHeading eyebrow="Our Rooms" title="Four Rooms, Each Kept Spotless">
             From a calm Deluxe to our most-requested Temple View room — every room is
             cleaned daily and set up for a real night's rest.
           </SectionHeading>
