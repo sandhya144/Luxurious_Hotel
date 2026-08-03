@@ -9,7 +9,7 @@ export default function RoomsTeaser() {
     <section id="rooms" className="bg-ivory py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="Our Rooms" title="A Room for Every Kind of Stay">
-          Five room types, each kept spotless and made for real rest after a day in the city.
+          Four room types, each kept spotless and made for real rest after a day in the city.
         </SectionHeading>
 
         <div className="mt-16 space-y-20">
@@ -40,7 +40,7 @@ export default function RoomsTeaser() {
                 </p>
                 <Link
                   to="/rooms"
-                  className="inline-block text-xs uppercase tracking-wider2 text-brass-deep transition-colors hover:text-charcoal"
+                  className="inline-block border border-brass-line/80 text-xs px-5 py-2  uppercase tracking-wider2 text-brass-deep transition-colors hover:text-ivory  hover:bg-brass"
                 >
                   Reserve →
                 </Link>
@@ -52,9 +52,9 @@ export default function RoomsTeaser() {
         <Reveal delay={0.15} className="mt-16 text-center">
           <Link
             to="/rooms"
-            className="inline-block border border-brass-line/60 px-8 py-3 text-xs uppercase tracking-wider2 text-brass-deep transition-all duration-300 hover:bg-brass hover:border-brass hover:text-ivory"
+            className="inline-block border bg-brass px-8 py-3 text-xs text-white font-medium uppercase tracking-wider2 transition-all duration-300 hover:bg-brass hover:border-brass hover:text-ivory"
           >
-            See All Rooms
+            See All Rooms →
           </Link>
         </Reveal>
       </div>

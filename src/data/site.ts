@@ -180,7 +180,7 @@ export const galleryImages = [
 export const nearby = [
   {
     name: 'Kashi Vishwanath Temple',
-    distance: '800m',
+    distance: '~400m',
     note: 'One of the holiest Shiva temples in India.',
     image: temple,
     alt: 'Carved stone facade of a Hindu temple',
@@ -252,7 +252,7 @@ export const testimonials = [
 export const faqs = [
   {
     q: 'How far is the hotel from Kashi Vishwanath Temple?',
-    a: 'About 800 metres — an easy eight to ten minute walk through the old city lanes. We are happy to walk first-time guests over so you know the way.',
+    a: 'About 400 metres — an easy eight to ten minute walk through the old city lanes. We are happy to walk first-time guests over so you know the way.',
   },
   {
     q: 'Is parking available?',

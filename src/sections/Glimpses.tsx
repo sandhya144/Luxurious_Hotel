@@ -28,7 +28,8 @@ export default function Glimpses() {
         <Reveal delay={0.2} className="mt-9 text-center">
           <Link
             to="/gallery"
-            className="text-xs font-medium uppercase tracking-wider2 text-brass-deep transition-colors hover:text-charcoal"
+            // className="text-xs font-medium uppercase tracking-wider2 text-brass-deep transition-colors hover:text-charcoal"
+            className="inline-block border bg-brass px-8 py-3 text-xs uppercase tracking-wider2 text-white font-medium transition-all duration-300 hover:bg-brass hover:border-brass hover:text-ivory"
           >
             View Full Gallery →
           </Link>
