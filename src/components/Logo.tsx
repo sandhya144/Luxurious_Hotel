@@ -28,10 +28,10 @@ export default function Logo({ className = '', variant = 'charcoal' }: LogoProps
       </svg>
       <span className="flex flex-col leading-none">
         <span className={`font-display text-[1.05rem] font-medium tracking-wide ${text}`}>
-          The White House Hotel
+          The White House 
         </span>
         <span className={`mt-0.5 text-[0.6rem] uppercase tracking-widest2 ${sub}`}>
-          Varanasi
+          Homestay
         </span>
       </span>
     </span>

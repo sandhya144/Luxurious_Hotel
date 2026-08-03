@@ -20,7 +20,7 @@ export default function SectionHeading({
   return (
     <div className={`flex max-w-2xl flex-col gap-4 ${alignCls} ${className}`}>
       {eyebrow && (
-        <Reveal as="p" className="smallcaps text-xs text-brass-deep">
+        <Reveal as="p" className="smallcaps text-sm font-medium text-brass-deep">
           {eyebrow}
         </Reveal>
       )}

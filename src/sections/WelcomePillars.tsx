@@ -8,7 +8,7 @@ const pillars = [
   },
   {
     title: 'Location',
-    body: 'An 800-metre walk to Kashi Vishwanath Temple and the ghats. You step out of our door and into the heart of the old city.',
+    body: 'A pleasant walk from Kashi Vishwanath Temple and the ghats. You step out of our door and into the heart of the old city.',
   },
   {
     title: 'Comfort & Cleanliness',
@@ -21,7 +21,7 @@ export default function WelcomePillars() {
     <section className="bg-ivory py-24 md:py-32">
       <div className="mx-auto max-w-3xl px-6">
         <SectionHeading align="center" eyebrow="A Welcome Note" title="The Stay, in Our Words">
-          We are a small, family-run hotel and we have always believed that hospitality is
+          We are a small, family-run homestay and we have always believed that hospitality is
           a personal thing. When you stay with us, you are not a room number — you are a
           guest in our home. Clean, comfortable rooms, a short walk to Kashi Vishwanath
           Temple, and people who genuinely want your trip to go well. That is the whole of it.

@@ -14,7 +14,8 @@ import gallery13 from '../assets/WhatsApp Image 13.jpeg';
 import gallery14 from '../assets/WhatsApp Image 14.jpeg';
 import gallery17 from '../assets/WhatsApp Image 17.jpeg'
 import gallery16 from '../assets/WhatsApp Image 16.jpeg'
-import building1 from '../assets/building 1.jpeg'
+import building1 from '../assets/new Building.jpeg'
+
 
 import temple from '../assets/temple.jpg'
 import ghat from '../assets/ghat.jpg'
@@ -295,7 +296,7 @@ export const hotel = {
   rating: '4.9',
   reviewsCount: '673',
   guestsHosted: '5,000+',
-  yearsHosting: '15+',
+  // yearsHosting: 'Hosting with Heart',
   mapEmbed:
     'https://www.google.com/maps?q=D+39%2F20-21%2C+Kodai+Chowki%2C+Nai+Sarak%2C+Varanasi%2C+Uttar+Pradesh+221001&output=embed',
 };

@@ -6,13 +6,15 @@ export default function Glimpses() {
   return (
     <section className="bg-ivory py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <Reveal as="p" className="mb-10 text-center smallcaps text-xs text-brass-deep">
+        <Reveal as="p" className="mb-10 text-center font-medium smallcaps text-xs text-brass-deep">
           A Few Glimpses
         </Reveal>
+        
+
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
           {glimpses.map((g, i) => (
             <Reveal key={i} delay={i * 0.08} className="overflow-hidden">
-              <div className="aspect-[4/5] overflow-hidden md:aspect-[3/4]">
+              <div className="aspect-[4/5] overflow-hidden  rounded-sm border border-brass-line/60 hover:border-brass-line/80 transition-colors duration-300">
                 <img
                   src={g.image}
                   alt={g.alt}
@@ -26,7 +28,7 @@ export default function Glimpses() {
         <Reveal delay={0.2} className="mt-9 text-center">
           <Link
             to="/gallery"
-            className="text-xs uppercase tracking-wider2 text-brass-deep transition-colors hover:text-charcoal"
+            className="text-xs font-medium uppercase tracking-wider2 text-brass-deep transition-colors hover:text-charcoal"
           >
             View Full Gallery →
           </Link>
