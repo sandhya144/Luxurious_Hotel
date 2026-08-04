@@ -1,6 +1,6 @@
 import Reveal from '@/components/Reveal';
 import { hotel } from '@/data/site';
-import hostImg from "../assets/host 1.jpeg"
+import hostImg from "../assets/host 3.jpeg"
 
   
 export default function MeetHost() {
@@ -26,9 +26,7 @@ export default function MeetHost() {
             Meet Your Host
         </Reveal>
           <Reveal as="p" delay={0.1} className="text-lg font-light leading-relaxed text-charcoal-soft">
-            Namaste, and welcome. For the years, I have been welcoming travellers and pilgrims with heartfelt hospitality in the Kashi, and I still meet every guest personally. For me this is not a business —
-            it is a way of sharing my city. Tell me what brought you here, and I will make
-            sure you see Kashi the way it should be seen.
+            Namaste, and welcome. For years, I have welcomed travellers and pilgrims to Kashi with heartfelt hospitality — meeting every guest myself, because to me this has never been just a business, but a way of sharing my city. Tell me what brought you here, and I'll help you see Kashi as it should be seen.
           </Reveal>
           <Reveal delay={0.2}>
             <p className="font-display text-3xl italic text-charcoal">— With warmth, the owner</p>
