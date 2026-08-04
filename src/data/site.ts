@@ -14,7 +14,8 @@ import gallery13 from '../assets/WhatsApp Image 13.jpeg';
 import gallery14 from '../assets/WhatsApp Image 14.jpeg';
 import gallery17 from '../assets/WhatsApp Image 17.jpeg'
 import gallery16 from '../assets/WhatsApp Image 16.jpeg'
-import building1 from '../assets/new Building.jpeg'
+// import building1 from '../assets/Building img.png'
+import building2 from '../assets/Buildingg.png'
 
 
 import temple from '../assets/temple.jpg'
@@ -108,7 +109,7 @@ export const heroPoster =
 
 export const glimpses = [
   {
-    image: building1,
+    image: building2,
     alt: "Exterior",
   },
    {
@@ -133,7 +134,7 @@ export const glimpses = [
 
 export const galleryImages = [
   {
-    image: building1,
+    image: building2,
     alt: "Exterior",
   },
   {

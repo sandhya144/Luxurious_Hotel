@@ -11,50 +11,43 @@ import herovideo from "../assets/New Video.mp4"
 export default function Hero() {
   const reduce = useReducedMotion();
 
-   const videoRef = useRef(null);
-const [isMuted, setIsMuted] = useState(true);
+   const videoRef = useRef<HTMLVideoElement>(null);
+const [isMuted, setIsMuted] = useState(false);
 
-const toggleAudio = () => {
-  if (videoRef.current) {
-    videoRef.current.muted = !isMuted;
-    setIsMuted(!isMuted);
-  }
-};
+// Try to autoplay with sound. If the browser blocks it, fall back to muted
+  // and keep the icon/state in sync with what's actually happening.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
 
-  // const [slide, setSlide] = useState(0);
+    video.muted = false;
+    const playPromise = video.play();
 
-  // useEffect(() => {
-  //   if (reduce) return;
-  //   const id = setInterval(() => {
-  //     setSlide((s) => (s + 1) % heroSlides.length);
-  //   }, 5000);
-  //   return () => clearInterval(id);
-  // }, [reduce]);
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Autoplay-with-sound was blocked by the browser.
+        // Fall back to muted autoplay, but reflect that in state
+        // so the button shows the correct (muted) icon.
+        video.muted = true;
+        setIsMuted(true);
+        video.play().catch(() => {
+          // Autoplay entirely blocked (rare) — leave paused, user can hit play/unmute.
+        });
+      });
+    }
+  }, []);
+
+  const toggleAudio = () => {
+    if (!videoRef.current) return;
+    const nextMuted = !isMuted;
+    videoRef.current.muted = nextMuted;
+    setIsMuted(nextMuted);
+  };
+
 
   return (
 
     <section id="top" className="relative h-[100svh] w-full overflow-hidden">
-      {/* Self-running hotel montage — building, deluxe room, reception, breakfast, room detail */}
-      {/* {heroSlides.map((s, i) => (
-        <div
-          key={i}
-          className="absolute inset-0 transition-opacity duration-[1800ms] ease-in-out"
-          style={{ opacity: i === slide ? 1 : 0, zIndex: i === slide ? 1 : 0 }}
-          aria-hidden={i !== slide}
-        >
-          <img
-            src={s.image}
-            alt=""
-            className="h-full w-full object-cover"
-            style={{
-              animation: i === slide && !reduce ? 'kenburns 7s ease-out forwards' : 'none',
-            }}
-            loading={i === 0 ? 'eager' : 'lazy'}
-            // poster used as a hint for the first paint
-            {...(i === 0 ? { 'data-poster': heroPoster } : {})}
-          />
-        </div>
-      ))} */}
 
       <video
   ref={videoRef}
@@ -100,14 +93,14 @@ const toggleAudio = () => {
           A Warm Stay, Steps from Kashi
         </motion.h1>
 
-        {/* <motion.p
+        <motion.p
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.55 }}
-          className="mt-5 max-w-2xl text-lg italic font-light  tracking-wide leading-relaxed text-ivory sm:text-lg"
+          className="mt-5 max-w-2xl text-base italic font-light  tracking-wide leading-relaxed text-ivory sm:text-lg"
         >
          Close to the temple, far from the noise.
-         </motion.p> */}
+         </motion.p>
 
         <motion.p
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 14 }}
@@ -115,7 +108,7 @@ const toggleAudio = () => {
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.55 }}
           className="mt-4 max-w-2xl text-base font-light leading-relaxed text-ivory/90 sm:text-lg"
         >
-         Close to the temple, far from the noise. Just a 5-minute walk from Kashi Vishwanath Temple, discover the warmth, comfort, and heartfelt hospitality of a home away from home.
+         Just a 5-minute walk from Kashi Vishwanath Temple, discover the warmth, comfort, and heartfelt hospitality of a home away from home.
         </motion.p>
 
         <motion.div
