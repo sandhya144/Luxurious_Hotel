@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Logo from './Logo';
-// import { heroSlides, heroPoster } from '@/data/site';
-// import herovideo from "../assets/HeroVideo.mp4"
 import herovideo from "../assets/New Video.mp4"
+import { Volume2, VolumeX } from "lucide-react";
 
 
 export default function Hero() {
@@ -46,9 +45,7 @@ const [isMuted, setIsMuted] = useState(false);
 
 
   return (
-
     <section id="top" className="relative h-[100svh] w-full overflow-hidden">
-
       <video
   ref={videoRef}
   autoPlay
@@ -61,17 +58,22 @@ const [isMuted, setIsMuted] = useState(false);
   Your browser 
 </video>
 
+
 <button
   onClick={toggleAudio}
-  aria-label={isMuted ? "Unmute background music" : "Mute background music"}
-  className="absolute bottom-7 right-7 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-ivory/40 text-ivory transition-all duration-300 hover:bg-ivory/10"
+  aria-label={isMuted ? "Unmute audio" : "Mute audio"}
+  className="absolute bottom-7 right-7 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/40 bg-black/20 backdrop-blur-md text-white hover:bg-black/30 transition"
 >
-  {isMuted ? '🔇' : '🔊'}
+  {isMuted ? (
+    <VolumeX className="h-5 w-5" />
+  ) : (
+    <Volume2 className="h-5 w-5" />
+  )}
 </button>
 
       {/* Legibility scrim */}
       <div className="absolute inset-0 z-[2] bg-charcoal/40" />
-      {/* <div className="absolute inset-0 z-[2] bg-gradient-to-b from-charcoal/30 via-transparent to-charcoal/50" /> */}
+      <div className="absolute inset-0 z-[2] bg-gradient-to-b from-charcoal/10 via-transparent to-charcoal/50" />
 
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
@@ -93,14 +95,14 @@ const [isMuted, setIsMuted] = useState(false);
           A Warm Stay, Steps from Kashi
         </motion.h1>
 
-        <motion.p
+        {/* <motion.p
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.55 }}
           className="mt-5 max-w-2xl text-base italic font-light  tracking-wide leading-relaxed text-ivory sm:text-lg"
         >
          Close to the temple, far from the noise.
-         </motion.p>
+         </motion.p> */}
 
         <motion.p
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 14 }}
@@ -108,8 +110,9 @@ const [isMuted, setIsMuted] = useState(false);
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.55 }}
           className="mt-4 max-w-2xl text-base font-light leading-relaxed text-ivory/90 sm:text-lg"
         >
-         Just a 5-minute walk from Kashi Vishwanath Temple, discover the warmth, comfort, and heartfelt hospitality of a home away from home.
-        </motion.p>
+         Your home in Kashi, just steps from the divine. <br></br>
+Located a 5-minute walk from Kashi Vishwanath Temple, our homestay in Varanasi blends heartfelt hospitality with the comfort of home — so close to devotion, yet so far from the noise.
+          </motion.p>
 
         <motion.div
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 14 }}

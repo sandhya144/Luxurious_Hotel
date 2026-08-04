@@ -31,7 +31,7 @@ export default function Logo({ className = '', variant = 'charcoal' }: LogoProps
           The White House 
         </span>
         <span className={`mt-0.5 text-[0.6rem] uppercase tracking-widest2 ${sub}`}>
-          homestay
+          Varanasi
         </span>
       </span>
     </span>
