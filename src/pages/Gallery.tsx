@@ -7,7 +7,6 @@ import Lightbox from '@/components/Lightbox';
 import { galleryImages } from '@/data/site';
 import { momento } from '@/data/site';
 import { useHashScroll } from '@/hooks/useHashScroll';
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 
 
@@ -110,3 +109,4 @@ export default function Gallery() {
     </main>
   );
 }
+
