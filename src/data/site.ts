@@ -16,10 +16,10 @@ import gallery17 from '../assets/WhatsApp Image 17.jpeg'
 import gallery16 from '../assets/WhatsApp Image 16.jpeg'
 import gallery18 from '../assets/WhatsApp Image 18.jpeg'
 import building2 from '../assets/Buildingg.png'
-import food from '../assets/food.jpeg';
+import food1 from '../assets/food 1.jpeg';
 import parking from '../assets/vehicles.jpeg'
 // import building3 from '../assets/wh newbuilding.jpeg';
-import building3 from '../assets/WH nbuilding.jpeg';
+import building3 from '../assets/Homestay.jpeg';
 import aarati from '../assets/ghats aarti.jpg';
 import gangadwar from '../assets/gangadwar.jpg';
 
@@ -151,11 +151,6 @@ export const galleryImages = [
     alt: "Exterior",
   },
   {
-    image: gallery14,
-    alt: "Exterior",
-  },
-  
-  {
     image: gallery5,
     alt: "Exterior",
   },
@@ -164,23 +159,15 @@ export const galleryImages = [
     alt: "Exterior",
   },
   {
-    image: food,
-    alt: "Exterior",
-  },
-  {
     image: gallery8,
     alt: "Exterior",
   },
   {
-    image: gallery18,
-    alt: "Exterior",
+    image: gallery14,
+    alt: "Reception",
   },
   {
-    image: gallery1,
-    alt: "Exterior",
-  },
-  {
-    image: gallery17,
+    image: gallery16,
     alt: "Exterior",
   },
   {
@@ -188,28 +175,21 @@ export const galleryImages = [
     alt: "Exterior",
   },
   {
+    image: gallery17,
+    alt: "Washroom",
+  },
+  {
     image: gallery11,
+    alt: "Exterior",
+  },
+  {
+    image: food1,
     alt: "Exterior",
   },
   {
     image: parking,
     alt: "Exterior",
   },
-  {
-    image: gangadwar,
-    alt: "Exterior",
-  },
-  
-  {
-    image: aarati,
-    alt: "Exterior",
-  },
-  
-  //  {
-  //   image: gallery7,
-  //   alt: "Exterior",
-  // },
-  
   
 ];
 

@@ -59,26 +59,16 @@ export default function Gallery() {
         onNav={setIndex}
       />
 
-      {/* <section className="border-y border-brass-line/40 bg-ivory scroll-mt-18 py-24 md:py-32">
-                    <div className="mx-auto max-w-3xl px-6 text-center">
-                     <SectionHeading align="center" eyebrow="Momento" title="Every Detail, Taken Care Of">
-                        Comfortable rooms, caring staff, and quiet conveniences — everything provided for an effortless stay.
-                      </SectionHeading>
-                      </div>
-        </section> */}
-
-        <section className="py-16 md:py-20">
-        <div className="mx-auto max-w-6xl px-6">
-        {/* <section id="momento" className="border-y border-brass-line/40 bg-ivory scroll-mt-24 py-24 md:py-32">
-  <div className="mx-auto max-w-3xl px-6 text-center"> */}
+        <section id="momento" className="border-t border-brass-line/40 bg-ivory scroll-mt-24 py-24 md:py-32">
+  <div className="mx-auto max-w-3xl px-6 text-center">
     <SectionHeading align="center" eyebrow="Momento" title="A Small Token of Home">
       Every guest takes home a small memento — our heartfelt thankyou for being part of our family.
     </SectionHeading>
       </div>
        </section>
+      
 
-
-    <section className="mt-7 pb-28 md:pb-36">
+    <section className=" pb-28 md:pb-36">
         <div className="mx-auto max-w-6xl px-6">
           <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
             {momento.map((g, i) => (
@@ -87,7 +77,7 @@ export default function Gallery() {
                   type="button"
                   onClick={() => setIndex(i)}
                   className="group block w-full overflow-hidden"
-                  aria-label={`Open image: ${momento.alt}`}
+                  aria-label={`Open image: ${momento}`}
                 >
                   <img
                     src={g.image}
@@ -101,6 +91,7 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+      
 
 
 
