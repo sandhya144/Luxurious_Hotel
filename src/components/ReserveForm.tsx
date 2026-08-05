@@ -1,51 +1,89 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { hotel } from '@/data/site';
+// import { useState } from 'react';
+// import { motion, AnimatePresence } from 'framer-motion';
+// import { hotel } from '@/data/site';
 
 type ReserveFormProps = {
   compact?: boolean;
 };
 
 export default function ReserveForm({ compact = false }: ReserveFormProps) {
-  const [sent, setSent] = useState(false);
+  
+  // const [sent, setSent] = useState(false);
+  // const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setSent(true);
+  // };
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSent(true);
+  e.preventDefault();
+
+  const form = new FormData(e.currentTarget);
+
+  const name = form.get("name");
+  const guests = form.get("guests");
+  const checkin = form.get("checkin");
+  const checkout = form.get("checkout");
+  const message = form.get("message");
+
+  const whatsappMessage = `
+  New Reservation Request
+
+  Name: ${name}
+
+  Guests: ${guests}
+
+  Check-in: ${checkin}
+
+  Check-out: ${checkout}
+
+  Message:
+  ${message || "N/A"}
+
+  Sent from The White House Hotel website.
+  `;
+
+    const phone = "917398722222";
+
+    window.open(
+      `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`,
+      "_blank"
+    );
   };
 
-  if (sent) {
-    return (
-      <div className="border border-brass-line/60 bg-ivory px-8 py-12 text-center">
-        <AnimatePresence mode="wait">
-          <motion.p
-            key="thanks"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="font-display text-2xl font-light text-charcoal"
-          >
-            Thank you — your request is in.
-          </motion.p>
-        </AnimatePresence>
-        <p className="mt-4 text-sm leading-relaxed text-charcoal-soft">
-          We will get back to you within a few hours to confirm your dates. For anything
-          urgent, call us at{' '}
-          <a href={hotel.phoneHref} className="text-brass-deep underline-offset-4 hover:underline">
-            {hotel.phone}
-          </a>
-          .
-        </p>
-        <button
-          type="button"
-          onClick={() => setSent(false)}
-          className="mt-7 text-xs uppercase tracking-wider2 text-brass-deep transition-colors hover:text-charcoal"
-        >
-          Send another request
-        </button>
-      </div>
-    );
-  }
+// ---------- FOR THIS NEEDS BACKEND ---------
+
+  // if (sent) {
+  //   return (
+  //     <div className="border border-brass-line/60 bg-ivory px-8 py-12 text-center">
+  //       <AnimatePresence mode="wait">
+  //         <motion.p
+  //           key="thanks"
+  //           initial={{ opacity: 0, y: 10 }}
+  //           animate={{ opacity: 1, y: 0 }}
+  //           transition={{ duration: 0.6, ease: 'easeOut' }}
+  //           className="font-display text-2xl font-light text-charcoal"
+  //         >
+  //           Thank you — your request is in.
+  //         </motion.p>
+  //       </AnimatePresence>
+  //       <p className="mt-4 text-sm leading-relaxed text-charcoal-soft">
+  //         We will get back to you within a few hours to confirm your dates. For anything
+  //         urgent, call us at{' '}
+  //         <a href={hotel.phoneHref} className="text-brass-deep underline-offset-4 hover:underline">
+  //           {hotel.phone}
+  //         </a>
+  //         .
+  //       </p>
+  //       <button
+  //         type="button"
+  //         onClick={() => setSent(false)}
+  //         className="mt-7 text-xs uppercase tracking-wider2 text-brass-deep transition-colors hover:text-charcoal"
+  //       >
+  //         Send another request
+  //       </button>
+  //     </div>
+  //   );
+  // }
 
   return (
     <form onSubmit={onSubmit} className="space-y-7">
@@ -74,20 +112,20 @@ export default function ReserveForm({ compact = false }: ReserveFormProps) {
             min={1}
             max={10}
             defaultValue={2}
-            className="underline-input"
+            className="text-charcoal-soft underline-input"
           />
         </label>
         <label className="block">
           <span className="mb-1 block text-xs uppercase tracking-wider2 text-charcoal-soft">
             Check-in
           </span>
-          <input required type="date" name="checkin" className="underline-input" />
+          <input required type="date" name="checkin" className="underline-input text-charcoal-soft" />
         </label>
         <label className="block">
           <span className="mb-1 block text-xs uppercase tracking-wider2 text-charcoal-soft">
             Check-out
           </span>
-          <input required type="date" name="checkout" className="underline-input" />
+          <input required type="date" name="checkout" className="underline-input text-charcoal-soft" />
         </label>
       </div>
 
@@ -109,7 +147,7 @@ export default function ReserveForm({ compact = false }: ReserveFormProps) {
         type="submit"
         className="w-full border border-brass bg-transparent px-8 py-3.5 text-xs uppercase tracking-wider2 text-brass-deep transition-all duration-300 hover:bg-brass hover:text-ivory sm:w-auto"
       >
-        Reserve
+        Reserve via WhatsApp
       </button>
     </form>
   );

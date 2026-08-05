@@ -238,7 +238,7 @@ export const nearby = [
   },
   {
     name: 'Dashashwamedh Ghat',
-    distance: '~1 km',
+    distance: '~900m',
     note: "The city's most iconic ghat.",
     image: ghat,
     alt: 'Historic Varanasi ghat with boats on the Ganges',
@@ -252,7 +252,7 @@ export const nearby = [
   },
   {
     name: 'Vishwanath Corridor',
-    distance: '~900m',
+    distance: '~600m',
     note: 'The temple-to-ghat pilgrim walkway.',
     image: corridor,
     alt: 'Ancient temple architecture at sunset',
@@ -340,14 +340,13 @@ export const hotel = {
   name: 'The White House Hotel',
   tagline: 'Varanasi',
   address: 'D 39/20-21, Kodai Chowki, Nai Sarak, Varanasi, Uttar Pradesh 221001',
-  phone: '+91 90000 00000',
-  phoneHref: 'tel:+919000000000',
-  whatsappHref: 'https://wa.me/919000000000',
-  email: 'stay@thewhitehousevaranasi.in',
+  phone: '+91 7398722222',
+  phoneHref: 'tel:+917398722222',
+  whatsappHref: 'https://wa.me/917398722222',
+  email: 'thewhitehouse1511@gmail.com',
   rating: '4.8',
-  reviewsCount: '673',
+  reviewsCount: '675+',
   guestsHosted: '5,000+',
-  // yearsHosting: 'Hosting with Heart',
   mapEmbed:
-    'https://www.google.com/maps?q=D+39%2F20-21%2C+Kodai+Chowki%2C+Nai+Sarak%2C+Varanasi%2C+Uttar+Pradesh+221001&output=embed',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.7817280661775!2d83.00288567484115!3d25.31153652706101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2f7b42a60cf1%3A0x4fc2c0fa999de345!2sThe%20White%20House%20-%20Hotel%20near%20Kashi%20Vishwanath%20temple!5e0!3m2!1sen!2sin!4v1785937950409!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
 };

@@ -14,19 +14,19 @@ export default function Contact() {
         <div className="mt-16 grid gap-14 md:grid-cols-2 md:gap-20">
           <Reveal className="space-y-8">
             <div className="space-y-3">
-              <p className="smallcaps text-xs text-brass-deep">Address</p>
-              <p className="text-base font-light leading-relaxed text-charcoal-soft">
+              <p className="smallcaps text-sm font-medium text-brass-deep">Address</p>
+              <p className="text-base font-light leading-relaxed text-charcoal/90">
                 {hotel.address}
               </p>
-              <p className="text-xs text-charcoal/50">[Please confirm the exact address before launch.]</p>
+              <p className="text-xs text-charcoal/60">Located near - Dashashwamedh Police Station</p>
             </div>
 
             <div className="space-y-3">
-              <p className="smallcaps text-xs text-brass-deep">Phone</p>
+              <p className="smallcaps text-sm font-medium text-brass-deep">Phone</p>
               <p>
                 <a
                   href={hotel.phoneHref}
-                  className="text-base text-charcoal transition-colors hover:text-brass-deep"
+                  className="text-base font-light text-charcoal/90 transition-colors hover:text-brass-deep"
                 >
                   {hotel.phone}
                 </a>
@@ -34,31 +34,41 @@ export default function Contact() {
             </div>
 
             <div className="space-y-3">
-              <p className="smallcaps text-xs text-brass-deep">Email</p>
+              <p className="smallcaps text-sm font-medium text-brass-deep">Email</p>
               <p>
                 <a
                   href={`mailto:${hotel.email}`}
-                  className="text-base text-charcoal transition-colors hover:text-brass-deep"
+                  className="text-base font-light text-charcoal/90 transition-colors hover:text-brass-deep"
                 >
                   {hotel.email}
                 </a>
               </p>
             </div>
 
-            <div className="space-y-3">
-              <p className="smallcaps text-xs text-brass-deep">Message us</p>
-              <p className="text-sm text-charcoal-soft">
-                <a href={hotel.whatsappHref} className="text-brass-deep underline-offset-4 hover:underline">
-                  WhatsApp
-                </a>
-                <span className="mx-2 text-brass-line">·</span>
-                <a href={hotel.phoneHref} className="text-brass-deep underline-offset-4 hover:underline">
-                  Call
-                </a>
-              </p>
-            </div>
 
-            <div className="overflow-hidden border border-brass-line/40">
+            <div className="space-y-3">
+  <p className="smallcaps text-sm font-medium text-brass-deep">
+    Connect with us
+  </p>
+
+  <div className="flex flex-wrap items-center gap-3">
+    <a
+      href={hotel.whatsappHref}
+      className="inline-flex items-center justify-center rounded-sm border border-brass-line px-5 py-2 text-sm font-medium tracking-wide text-charcoal/90 transition-all duration-300 hover:border-brass-deep hover:bg-brass-deep hover:text-ivory"
+    >
+      WhatsApp
+    </a>
+
+    <a
+      href={hotel.phoneHref}
+      className="inline-flex items-center justify-center rounded-sm border border-brass-line px-5 py-2 text-sm font-medium tracking-wide text-charcoal/90 transition-all duration-300 hover:border-charcoal hover:bg-charcoal hover:text-ivory"
+    >
+      Call
+    </a>
+  </div>
+</div>
+
+            <div className="overflow-hidden border border-brass-line/70">
               <iframe
                 title="Map of The White House Hotel, Varanasi"
                 src={hotel.mapEmbed}
