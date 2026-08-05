@@ -7,11 +7,17 @@ import Lightbox from '@/components/Lightbox';
 import { galleryImages } from '@/data/site';
 import { momento } from '@/data/site';
 import { useHashScroll } from '@/hooks/useHashScroll';
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+
+
 
 export default function Gallery() {
   const location = useLocation();
   useHashScroll(location.key);
-  const [index, setIndex] = useState<number | null>(null);
+  
+  const [galleryIndex, setGalleryIndex] = useState<number | null>(null);
+  const [momentoIndex, setMomentoIndex] = useState<number | null>(null);
+  
 
   return (
     <main className="bg-ivory pt-28 md:pt-32">
@@ -35,7 +41,8 @@ export default function Gallery() {
               <Reveal key={i} delay={(i % 3) * 0.08} className="break-inside-avoid">
                 <button
                   type="button"
-                  onClick={() => setIndex(i)}
+                  onClick={() => setGalleryIndex(i)}
+                  
                   className="group block w-full overflow-hidden"
                   aria-label={`Open image: ${g.alt}`}
                 >
@@ -54,9 +61,9 @@ export default function Gallery() {
 
       <Lightbox
         images={galleryImages}
-        index={index}
-        onClose={() => setIndex(null)}
-        onNav={setIndex}
+        index={galleryIndex}
+        onClose={() => setGalleryIndex(null)}
+        onNav={setGalleryIndex}
       />
 
         <section id="momento" className="border-t border-brass-line/40 bg-ivory scroll-mt-24 py-24 md:py-32">
@@ -75,9 +82,9 @@ export default function Gallery() {
               <Reveal key={i} delay={(i % 3) * 0.08} className="break-inside-avoid">
                 <button
                   type="button"
-                  onClick={() => setIndex(i)}
+                  onClick={() => setMomentoIndex(i)}
                   className="group block w-full overflow-hidden"
-                  aria-label={`Open image: ${momento}`}
+                  aria-label={`Open image: ${g.alt}`}
                 >
                   <img
                     src={g.image}
@@ -91,29 +98,14 @@ export default function Gallery() {
           </div>
         </div>
       </section>
-      
 
-
-
-    {/* <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
-      <img
-        src="/images/momento-1.jpg"
-        alt="Guests receiving a memento from the homestay owner"
-        className="aspect-square w-full rounded-lg object-cover"
+       
+      <Lightbox
+        images={momento}
+        index={momentoIndex}
+        onClose={() => setMomentoIndex(null)}
+        onNav={setMomentoIndex}
       />
-      <img
-        src="/images/momento-2.jpg"
-        alt="Homestay owner with visiting guests"
-        className="aspect-square w-full rounded-lg object-cover"
-      />
-      <img
-        src="/images/momento-3.jpg"
-        alt="Guests holding their memento"
-        className="aspect-square w-full rounded-lg object-cover"
-      />
-    </div> */}
-
-    
 
     </main>
   );

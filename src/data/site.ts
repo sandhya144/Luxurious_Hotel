@@ -35,7 +35,6 @@ import momento7 from '../assets/momento7.jpeg'
 import momento8 from '../assets/momento8.jpeg'
 
 
-
 import temple from '../assets/temple.jpg'
 import ghat from '../assets/ghat.jpg'
 import ganga from '../assets/ganga.jpg'
