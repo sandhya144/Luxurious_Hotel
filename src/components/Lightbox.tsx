@@ -3,15 +3,13 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// type LightboxProps = {
-//   images: { image: string; alt: string }[];
-//   index: number | null;
-//   onClose: () => void;
-//   onNav: (i: number) => void;
-// };
+interface ImageItem {
+  image: string;
+  alt: string;
+}
 
 interface LightboxProps {
-  images: any[];
+  images: ImageItem[];
   index: number | null;
   onClose: () => void;
   onNav: (index: number) => void;
@@ -20,18 +18,18 @@ interface LightboxProps {
 
 export default function Lightbox({ images, index, onClose, onNav }: LightboxProps) {
   const open = index !== null;
-
    if (index === null) return null;
-
   const current = images[index];
-    
 
-  const handlePrev = () => {
-  onNav((index - 1 + images.length) % images.length);
+const handlePrev = () => {
+  if (index > 0) {
+    onNav(index - 1);
+  }
 };
-
 const handleNext = () => {
-  onNav((index + 1) % images.length);
+  if (index < images.length - 1) {
+    onNav(index + 1);
+  }
 };
 
 
@@ -39,8 +37,13 @@ const handleNext = () => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
-      if (e.key === 'ArrowRight') onNav(((index as number) + 1) % images.length);
-      if (e.key === 'ArrowLeft') onNav(((index as number) - 1 + images.length) % images.length);
+      if (e.key === "ArrowRight" && index < images.length - 1) {
+  onNav(index + 1);
+}
+
+if (e.key === "ArrowLeft" && index > 0) {
+  onNav(index - 1);
+}
     };
     window.addEventListener('keydown', onKey);
     document.body.style.overflow = 'hidden';
@@ -78,15 +81,14 @@ const handleNext = () => {
     e.stopPropagation();
     handlePrev();
   }}
+  disabled={index === 0}
   className="absolute left-5 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white"
 >
-  <ChevronLeft size={32} />
+  <ChevronLeft size={30} />
 </button>
 
           <motion.img
             key={index}
-            // src={images[index as number].image}
-            // alt={images[index as number].alt}
             src={current.image}
             alt={current.alt}
             className="max-h-[88vh] max-w-full object-contain"
@@ -101,9 +103,10 @@ const handleNext = () => {
     e.stopPropagation();
     handleNext();
   }}
+  disabled={index === images.length - 1}
             className="absolute right-5 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white"
           >
-            <ChevronRight size={32} />
+            <ChevronRight size={30} />
           </button>
 
         </motion.div>
