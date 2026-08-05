@@ -1,6 +1,6 @@
 import Reveal from '@/components/Reveal';
 import { hotel } from '@/data/site';
-import hostImg from "../assets/host 3.jpeg"
+import hostImg from "../assets/host 5.jpeg"
 
   
 export default function MeetHost() {
@@ -8,16 +8,22 @@ export default function MeetHost() {
     <section className="bg-stone/50 py-24 md:py-32">
       <div className="mx-auto grid max-w-5xl items-center gap-12 px-6 md:grid-cols-[360px_1fr] md:gap-16">
 
-        <Reveal className="overflow-hidden">
+        {/* <Reveal className="overflow-hidden">
           <div className="aspect-[4/5] overflow-hidden rounded-sm border border-brass-line/90">
-            <img
-              src={hostImg}
-              alt="The owner of The White House Hotel, Varanasi"
-              loading="lazy"
-              className="h-full w-full object-cover rounded-sm transition-transform duration-[1200ms] ease-out hover:scale-[1.04] "
-            />
+            .....
           </div>
-        </Reveal>
+        </Reveal> */}
+
+        <Reveal className="flex justify-center">
+  <div className="w-full max-w-[350px] aspect-[4/3] md:max-w-none md:aspect-[4/5] overflow-hidden rounded-sm border border-brass-line/90">
+    <img
+      src={hostImg}
+      alt="The owner of The White House Hotel, Varanasi"
+      loading="lazy"
+      className="h-full w-full object-cover rounded-sm transition-transform duration-[1200ms] ease-out "
+    />
+  </div>
+</Reveal>
 
        
 
