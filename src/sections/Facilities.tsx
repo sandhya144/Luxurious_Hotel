@@ -3,28 +3,36 @@ import SectionHeading from '@/components/SectionHeading';
 
 const pillars = [
   {
-    title: 'Airport pickup',
-    body: 'Smooth pickup, right on arrival.',
+    title: 'Prime Location',
+    body: 'Just 400m from Kashi Vishwanath Temple.',
   },
   {
-    title: '24 x 7 Reception',
-    body: 'Always here, day or night.',
+    title: 'Express Darshan',
+    body: 'Skip the queue for Kashi Vishwanath Temple.',
+  },
+  {
+    title: 'Ganga Aarti from Boat',
+    body: 'Witness the Aarti in style, right from the river.',
+  },
+  {
+    title: 'Banarasi Saree Detour',
+    body: 'See the craft behind Banaras\u2019s famous weaves.',
+  },
+  {
+    title: 'Local tour and travel guide',
+    body: 'Expert tips for exploring Varanasi.',
+  },
+  {
+    title: 'Airport pickup',
+    body: 'Smooth pickup, right on arrival.',
   },
   {
     title: 'Food',
     body: 'Home-cooked meals, made with love.',
   },
   {
-    title: 'Laundry',
-    body: 'Fast, reliable laundry service.',
-  },
-  {
     title: 'Parking',
     body: 'Free, secure parking on-site.',
-  },
-  {
-    title: 'Local tour and travel guide',
-    body: 'Expert tips for exploring Varanasi.',
   },
 ];
 

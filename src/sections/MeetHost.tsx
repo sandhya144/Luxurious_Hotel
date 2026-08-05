@@ -36,7 +36,7 @@ export default function MeetHost() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="font-display text-3xl italic text-charcoal">— With warmth, the owner</p>
-            <p className="mt-3 text-sm text-charcoal-soft">  Shamsher</p>
+            <p className="mt-3 text-sm text-charcoal-soft">Shamsher Sheikh</p>
           </Reveal>
          </div>
         </div> 

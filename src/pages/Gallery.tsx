@@ -16,7 +16,6 @@ export default function Gallery() {
   
   const [galleryIndex, setGalleryIndex] = useState<number | null>(null);
   const [momentoIndex, setMomentoIndex] = useState<number | null>(null);
-  
 
   return (
     <main className="bg-ivory pt-28 md:pt-32">

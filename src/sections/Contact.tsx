@@ -53,7 +53,7 @@ export default function Contact() {
 
   <div className="flex flex-wrap items-center gap-3">
     <a
-      href={hotel.whatsappHref}
+      href={hotel.whatsappMsgNo}
       className="inline-flex items-center justify-center rounded-sm border border-brass-line px-5 py-2 text-sm font-medium tracking-wide text-charcoal/90 transition-all duration-300 hover:border-brass-deep hover:bg-brass-deep hover:text-ivory"
     >
       WhatsApp

@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -33,6 +35,20 @@ export default function Navbar() {
   const variant = overHero ? 'ivory' : 'charcoal';
   const linkColor = overHero ? 'text-ivory/85' : 'text-charcoal/80';
 
+  // Closes the mobile drawer for ANY link, including same-page hash links
+  // (where location.pathname never changes on its own), then manually
+  // scrolls to the target section once the drawer is out of the way.
+  const handleNavClick = (to: string) => {
+    setOpen(false);
+
+    if (to.includes('#')) {
+      const id = to.split('#')[1];
+      window.setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      }, 350); // roughly matches the drawer's exit animation duration
+    }
+  };
+
   return (
     <>
       <header
@@ -52,6 +68,7 @@ export default function Navbar() {
               <li key={l.label}>
                 <Link
                   to={l.to}
+                  onClick={() => handleNavClick(l.to)}
                   className={`nav-link ${linkColor} hover:text-current`}
                   data-active={false}
                 >
@@ -64,6 +81,7 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <Link
               to="/#contact"
+              onClick={() => handleNavClick('/#contact')}
               className={`nav-link ${linkColor} border border-brass-line/60 px-5 py-2 transition-colors duration-300 hover:bg-brass hover:border-brass hover:text-ivory`}
             >
               Book Your Stay
@@ -111,6 +129,7 @@ export default function Navbar() {
                 >
                   <Link
                     to={l.to}
+                    onClick={() => handleNavClick(l.to)}
                     className="font-display text-3xl text-charcoal hover:text-brass transition-colors"
                   >
                     {l.label}
@@ -124,6 +143,7 @@ export default function Navbar() {
               >
                 <Link
                   to="/#contact"
+                  onClick={() => handleNavClick('/#contact')}
                   className="mt-2 inline-block border border-brass px-6 py-2.5 text-xs uppercase tracking-wider2 text-brass transition-colors hover:bg-brass hover:text-ivory"
                 >
                   Book Your Stay
@@ -136,3 +156,6 @@ export default function Navbar() {
     </>
   );
 }
+
+
+

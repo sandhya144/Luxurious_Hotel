@@ -4,6 +4,7 @@ import { hotel, navLinks } from '@/data/site';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+    
   return (
     <footer className="border-t border-brass-line/50 bg-stone/60">
       <div className="mx-auto max-w-6xl px-6 py-16">
@@ -41,22 +42,9 @@ export default function Footer() {
               </p>
             </address>
 
-              {/* <p className="pt-2 text-xs uppercase tracking-wider2">
-                <a
-                  href={hotel.whatsappHref}
-                  className="inline-flex items-center justify-center rounded-full border border-brass-line px-5 py-2 text-xs font-medium tracking-wide text-charcoal/90 transition-all duration-300 hover:border-brass-deep hover:bg-brass-deep hover:text-ivory"
-                >
-                  WhatsApp
-                </a>
-                <p>
-                <a href={hotel.phoneHref} className="transition-colors hover:text-brass-deep">
-                  Call
-                </a>
-              </p> */}
-
                <div className="flex flex-wrap items-center gap-2">
     <a
-      href={hotel.whatsappHref}
+      href={hotel.whatsappMsgNo}
       className="inline-flex items-center justify-center rounded-sm border border-brass-line px-3 py-1 text-sm font-medium tracking-wide text-charcoal/90 transition-all duration-300 hover:border-brass-deep hover:bg-brass-deep hover:text-ivory"
     >
       WhatsApp
@@ -69,9 +57,7 @@ export default function Footer() {
       Call
     </a>
   </div>
-
-
-              
+      
           </div>
         </div>
 

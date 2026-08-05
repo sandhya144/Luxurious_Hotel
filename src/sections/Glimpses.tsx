@@ -14,7 +14,7 @@ export default function Glimpses() {
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
           {glimpses.map((g, i) => (
             <Reveal key={i} delay={i * 0.08} className="overflow-hidden">
-              <div className="aspect-[4/5] overflow-hidden  rounded-sm border border-brass-line/30 hover:border-brass-line/80 transition-colors duration-300">
+              <div className="aspect-[4/5] overflow-hidden  rounded-sm border border-brass-line/50 hover:border-brass-line/90 transition-colors duration-300">
                 <img
                   src={g.image}
                   alt={g.alt}

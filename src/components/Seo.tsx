@@ -48,9 +48,9 @@ export function HotelJsonLd() {
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
-      reviewCount: '673',
+      reviewCount: '677',
     },
-    telephone: '+91 90000 00000',
+    telephone: '+91 7398722222',
     priceRange: '₹2,500 – ₹4,800',
   };
   return (

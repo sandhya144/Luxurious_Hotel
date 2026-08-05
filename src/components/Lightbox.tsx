@@ -93,50 +93,68 @@ export default function Lightbox({
             <X size={26} strokeWidth={1.4} />
           </button>
 
-          <button
-            type="button"
-            onClick={(event) => {
-              event.stopPropagation();
-              handlePrev();
-            }}
-            disabled={index === 0}
-            aria-label="Previous image"
-            className={`absolute left-3 top-1/2 z-20 -translate-y-1/2 rounded-full p-3 transition sm:left-5 ${
-              index === 0
-                ? 'cursor-not-allowed bg-black/20 text-white/30'
-                : 'bg-black/50 text-white hover:bg-black/70'
-            }`}
-          >
-            <ChevronLeft size={30} />
-          </button>
-
-          <motion.img
-            key={index}
-            src={images[index].image}
-            alt={images[index].alt}
-            className="max-h-[88vh] max-w-full object-contain"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
+          {/* Image + controls, stacked in a column so nothing sits on top of the photo */}
+          <div
+            className="flex max-h-[92vh] w-full max-w-4xl flex-col items-center"
             onClick={(event) => event.stopPropagation()}
-          />
-
-          <button
-            type="button"
-            onClick={(event) => {
-              event.stopPropagation();
-              handleNext();
-            }}
-            disabled={index === images.length - 1}
-            aria-label="Next image"
-            className={`absolute right-3 top-1/2 z-20 -translate-y-1/2 rounded-full p-3 transition sm:right-5 ${
-              index === images.length - 1
-                ? 'cursor-not-allowed bg-black/20 text-white/30'
-                : 'bg-black/50 text-white hover:bg-black/70'
-            }`}
           >
-            <ChevronRight size={30} />
-          </button>
+            <motion.img
+              key={index}
+              src={images[index].image}
+              alt={images[index].alt}
+              className="max-h-[75vh] w-full object-contain sm:max-h-[78vh]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, ease: 'easeOut' }}
+            />
+
+            {/* Control row, below the image */}
+            <div className="mt-6 flex items-center gap-6">
+              <button
+                type="button"
+                onClick={handlePrev}
+                disabled={index === 0}
+                aria-label="Previous image"
+                className={`
+                  flex h-11 w-11 items-center justify-center
+                  rounded-full border border-ivory/25 bg-ivory/10
+                  shadow-sm backdrop-blur-sm
+                  transition-all duration-300
+                  ${
+                    index === 0
+                      ? 'cursor-not-allowed opacity-30'
+                      : 'hover:bg-ivory/20 hover:scale-105'
+                  }
+                `}
+              >
+                <ChevronLeft size={20} strokeWidth={1.6} className="text-ivory" />
+              </button>
+
+              <span className="text-xs tracking-[0.2em] text-ivory/70">
+                {index + 1} / {images.length}
+              </span>
+
+              <button
+                type="button"
+                onClick={handleNext}
+                disabled={index === images.length - 1}
+                aria-label="Next image"
+                className={`
+                  flex h-11 w-11 items-center justify-center
+                  rounded-full border border-ivory/25 bg-ivory/10
+                  shadow-sm backdrop-blur-sm
+                  transition-all duration-300
+                  ${
+                    index === images.length - 1
+                      ? 'cursor-not-allowed opacity-30'
+                      : 'hover:bg-ivory/20 hover:scale-105'
+                  }
+                `}
+              >
+                <ChevronRight size={20} strokeWidth={1.6} className="text-ivory" />
+              </button>
+            </div>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

@@ -8,6 +8,12 @@ import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import './index.css';
 
+// Prevent the browser from silently restoring an old scroll position
+// on reload — let useHashScroll be the only thing controlling scroll.
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
