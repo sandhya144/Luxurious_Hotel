@@ -35,11 +35,11 @@ import momento7 from '../assets/momento7.jpeg'
 import momento8 from '../assets/momento8.jpeg'
 
 
-import temple from '../assets/temple.jpg'
+import temple from '../assets/v corridor.jpg'
 import ghat from '../assets/ghat.jpg'
 import ganga from '../assets/ganga.jpg'
 import sarnath from '../assets/sarnath.jpg'
-import corridor from '../assets/corridor.jpg'
+import corridor from '../assets/gangadwar.jpg'
 import street from '../assets/street.jpg'
 
 
@@ -267,7 +267,7 @@ export const nearby = [
   {
     name: 'Banaras ancient streets',
     distance: '~1.2 km',
-    note: "Silk, handicrafts, and the old city's lanes.",
+    note: "The taste of Varanasi, chilled in tradition",
     image: street,
     alt: 'A vibrant Varanasi market street with vendors and shoppers',
   },

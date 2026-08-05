@@ -9,11 +9,12 @@ export default function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-ivory py-24 md:py-32">
+    <section id="faq" className="bg-ivory border-t border-brass-line/40 py-24 md:py-32">
       <div className="mx-auto max-w-3xl px-6">
+
         <SectionHeading eyebrow="Good to Know" title="Questions, Answered" />
 
-        <div className="mt-14 divide-y divide-brass-line/40 border-y border-brass-line/40">
+        <div className="mt-14 divide-y divide-brass-line/40  border-brass-line/40">
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (

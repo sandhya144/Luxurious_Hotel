@@ -35,7 +35,7 @@ export default function Home() {
       <Facilities />
       <Nearby />
       <GuestNotes />
-      <ByNumbers />
+      {/* <ByNumbers /> */}
       <Faq />
       <Contact />
     </>
