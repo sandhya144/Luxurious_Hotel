@@ -12,7 +12,7 @@ export default function ByNumbers() {
           <span className="mx-3 text-brass-line">·</span>
           800m to the temple
           <span className="mx-3 text-brass-line">·</span>
-          {hotel.yearsHosting} years of hospitality
+           years of hospitality
         </Reveal>
       </div>
     </section>

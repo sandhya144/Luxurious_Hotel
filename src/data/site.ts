@@ -14,8 +14,26 @@ import gallery13 from '../assets/WhatsApp Image 13.jpeg';
 import gallery14 from '../assets/WhatsApp Image 14.jpeg';
 import gallery17 from '../assets/WhatsApp Image 17.jpeg'
 import gallery16 from '../assets/WhatsApp Image 16.jpeg'
-// import building1 from '../assets/Building img.png'
+import gallery18 from '../assets/WhatsApp Image 18.jpeg'
 import building2 from '../assets/Buildingg.png'
+import food from '../assets/food.jpeg';
+import parking from '../assets/vehicles.jpeg'
+// import building3 from '../assets/wh newbuilding.jpeg';
+import building3 from '../assets/WH nbuilding.jpeg';
+import aarati from '../assets/ghats aarti.jpg';
+import gangadwar from '../assets/gangadwar.jpg';
+
+
+
+import momento1 from '../assets/momento1.jpeg'
+import momento2 from '../assets/momento2.jpeg'
+import momento3 from '../assets/momento3.jpeg'
+import momento4 from '../assets/momento4.jpeg'
+import momento5 from '../assets/momento5.jpeg'
+import momento6 from '../assets/momento 6.jpeg'
+import momento7 from '../assets/momento7.jpeg'
+import momento8 from '../assets/momento8.jpeg'
+
 
 
 import temple from '../assets/temple.jpg'
@@ -109,7 +127,7 @@ export const heroPoster =
 
 export const glimpses = [
   {
-    image: building2,
+    image: building3,
     alt: "Exterior",
   },
    {
@@ -125,26 +143,18 @@ export const glimpses = [
     alt: "Lobby",
   },
   
-  // {
-  //   image: gallery14,
-  //   alt: "Exterior",
-  // },
-  
 ];
 
 export const galleryImages = [
   {
-    image: building2,
+    image: building3,
     alt: "Exterior",
   },
   {
     image: gallery14,
     alt: "Exterior",
   },
-  {
-    image: gallery1,
-    alt: "Exterior",
-  },
+  
   {
     image: gallery5,
     alt: "Exterior",
@@ -153,9 +163,20 @@ export const galleryImages = [
     image: gallery6,
     alt: "Exterior",
   },
-
+  {
+    image: food,
+    alt: "Exterior",
+  },
   {
     image: gallery8,
+    alt: "Exterior",
+  },
+  {
+    image: gallery18,
+    alt: "Exterior",
+  },
+  {
+    image: gallery1,
     alt: "Exterior",
   },
   {
@@ -166,16 +187,66 @@ export const galleryImages = [
     image: gallery10,
     alt: "Exterior",
   },
-  
   {
     image: gallery11,
     alt: "Exterior",
   },
-   {
-    image: gallery7,
+  {
+    image: parking,
+    alt: "Exterior",
+  },
+  {
+    image: gangadwar,
     alt: "Exterior",
   },
   
+  {
+    image: aarati,
+    alt: "Exterior",
+  },
+  
+  //  {
+  //   image: gallery7,
+  //   alt: "Exterior",
+  // },
+  
+  
+];
+
+export const momento = [
+  
+  {
+    image: momento7,
+    alt: "Exterior",
+  },
+  {
+    image: momento5,
+    alt: "Exterior",
+  },
+  {
+    image: momento1,
+    alt: "Exterior",
+  },
+  {
+    image: momento2,
+    alt: "Exterior",
+  },
+  {
+    image: momento3,
+    alt: "Exterior",
+  },
+   {
+    image: momento6,
+    alt: "Exterior",
+  },
+  {
+    image: momento4,
+    alt: "Exterior",
+  },
+  {
+    image:momento8,
+    alt: "Exterior",
+  },
 ];
 
 export const nearby = [
@@ -281,8 +352,8 @@ export const navLinks = [
   { label: 'Home', to: '/', section: 'top' },
   { label: 'Rooms', to: '/rooms', section: 'rooms' },
   { label: 'Gallery', to: '/gallery', section: 'gallery' },
+  { label: 'Amenties', to: '/#facilities', section: 'facilities' },
   { label: 'Reviews', to: '/#reviews', section: 'reviews' },
-  { label: 'FAQ', to: '/#faq', section: 'faq' },
   { label: 'Contact', to: '/#contact', section: 'contact' },
 ];
 
@@ -294,7 +365,7 @@ export const hotel = {
   phoneHref: 'tel:+919000000000',
   whatsappHref: 'https://wa.me/919000000000',
   email: 'stay@thewhitehousevaranasi.in',
-  rating: '4.9',
+  rating: '4.8',
   reviewsCount: '673',
   guestsHosted: '5,000+',
   // yearsHosting: 'Hosting with Heart',

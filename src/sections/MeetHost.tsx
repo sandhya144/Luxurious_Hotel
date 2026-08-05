@@ -26,7 +26,7 @@ export default function MeetHost() {
             Meet Your Host
         </Reveal>
           <Reveal as="p" delay={0.1} className="text-lg font-light leading-relaxed text-charcoal-soft">
-            Namaste, and welcome. For years, I have welcomed travellers and pilgrims to Kashi with heartfelt hospitality — meeting every guest myself, because to me this has never been just a business, but a way of sharing my city. Tell me what brought you here, and I'll help you see Kashi as it should be seen.
+           Namaste, and welcome. For years, I've welcomed travellers to Kashi myself, because to me this has always been about sharing my city, not just running a business. Tell me what brought you here — I'll help you see Kashi as it should be seen.
           </Reveal>
           <Reveal delay={0.2}>
             <p className="font-display text-3xl italic text-charcoal">— With warmth, the owner</p>

@@ -4,6 +4,7 @@ import Home from '@/pages/Home';
 import Rooms from '@/pages/Rooms';
 import Gallery from '@/pages/Gallery';
 
+
 function AnimatedRoutes() {
   const location = useLocation();
   return (

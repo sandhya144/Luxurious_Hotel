@@ -5,6 +5,7 @@ import SectionHeading from '@/components/SectionHeading';
 import Seo from '@/components/Seo';
 import Lightbox from '@/components/Lightbox';
 import { galleryImages } from '@/data/site';
+import { momento } from '@/data/site';
 import { useHashScroll } from '@/hooks/useHashScroll';
 
 export default function Gallery() {
@@ -57,6 +58,72 @@ export default function Gallery() {
         onClose={() => setIndex(null)}
         onNav={setIndex}
       />
+
+      {/* <section className="border-y border-brass-line/40 bg-ivory scroll-mt-18 py-24 md:py-32">
+                    <div className="mx-auto max-w-3xl px-6 text-center">
+                     <SectionHeading align="center" eyebrow="Momento" title="Every Detail, Taken Care Of">
+                        Comfortable rooms, caring staff, and quiet conveniences — everything provided for an effortless stay.
+                      </SectionHeading>
+                      </div>
+        </section> */}
+
+        <section className="py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-6">
+        {/* <section id="momento" className="border-y border-brass-line/40 bg-ivory scroll-mt-24 py-24 md:py-32">
+  <div className="mx-auto max-w-3xl px-6 text-center"> */}
+    <SectionHeading align="center" eyebrow="Momento" title="A Small Token of Home">
+      Every guest takes home a small memento — our heartfelt thankyou for being part of our family.
+    </SectionHeading>
+      </div>
+       </section>
+
+
+    <section className="mt-7 pb-28 md:pb-36">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
+            {momento.map((g, i) => (
+              <Reveal key={i} delay={(i % 3) * 0.08} className="break-inside-avoid">
+                <button
+                  type="button"
+                  onClick={() => setIndex(i)}
+                  className="group block w-full overflow-hidden"
+                  aria-label={`Open image: ${momento.alt}`}
+                >
+                  <img
+                    src={g.image}
+                    alt={g.alt}
+                    loading="lazy"
+                    className="w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                  />
+                </button>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+    {/* <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      <img
+        src="/images/momento-1.jpg"
+        alt="Guests receiving a memento from the homestay owner"
+        className="aspect-square w-full rounded-lg object-cover"
+      />
+      <img
+        src="/images/momento-2.jpg"
+        alt="Homestay owner with visiting guests"
+        className="aspect-square w-full rounded-lg object-cover"
+      />
+      <img
+        src="/images/momento-3.jpg"
+        alt="Guests holding their memento"
+        className="aspect-square w-full rounded-lg object-cover"
+      />
+    </div> */}
+
+    
+
     </main>
   );
 }

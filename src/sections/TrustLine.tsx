@@ -9,7 +9,7 @@ export default function TrustLine() {
           Trusted by Travellers
         </Reveal>
         <Reveal as="p" delay={0.1} className="mt-5 font-display text-2xl font-light leading-snug text-charcoal sm:text-3xl text-balance">
-          Proudly rated {hotel.rating}★ on Google by guests who've stayed with us — it's known for genuine hospitality, comfort, and a location just a short walk from Kashi Vishwanath Temple.
+           Rated {hotel.rating}★ on Google, with 5000+ guests welcomed so far — loved for our genuine hospitality, comfortable stays, and a location just a short walk from Kashi Vishwanath Temple.
         </Reveal>
       </div>
     </section>
