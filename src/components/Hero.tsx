@@ -7,14 +7,14 @@ import herovideo from "../assets/New Video.mp4"
 import { Volume2, VolumeX } from "lucide-react";
 
 
-export default function Hero() {
-  const reduce = useReducedMotion();
 
-   const videoRef = useRef<HTMLVideoElement>(null);
+export default function Hero() {
+const reduce = useReducedMotion();
+
+const videoRef = useRef<HTMLVideoElement>(null);
 const [isMuted, setIsMuted] = useState(false);
 
-// Try to autoplay with sound. If the browser blocks it, fall back to muted
-  // and keep the icon/state in sync with what's actually happening.
+
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -30,7 +30,6 @@ const [isMuted, setIsMuted] = useState(false);
         video.muted = true;
         setIsMuted(true);
         video.play().catch(() => {
-          // Autoplay entirely blocked (rare) — leave paused, user can hit play/unmute.
         });
       });
     }
@@ -94,15 +93,6 @@ const [isMuted, setIsMuted] = useState(false);
         >
           A Warm Stay, Steps from Kashi
         </motion.h1>
-
-        {/* <motion.p
-          initial={reduce ? { opacity: 0 } : { opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: 'easeOut', delay: 0.55 }}
-          className="mt-5 max-w-2xl text-base italic font-light  tracking-wide leading-relaxed text-ivory sm:text-lg"
-        >
-         Close to the temple, far from the noise.
-         </motion.p> */}
 
         <motion.p
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 14 }}
