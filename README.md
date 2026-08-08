@@ -47,18 +47,18 @@ src/
 
 ## 🚀Getting Started
 
-### Prerequisites
+### ⚙️Prerequisites
 
 - Node.js 18+
 - npm
 
-### Installation
+### 💡Installation
 
 ```bash
 npm install
 ```
 
-### Development
+### 🛠️Development
 
 ```bash
 npm run dev
@@ -70,7 +70,7 @@ Then open your browser at:
 http://localhost:5173
 ```
 
-## Available Scripts
+## 🪜Available Scripts
 
 ```bash
 npm run dev      # start the Vite development server
@@ -80,7 +80,7 @@ npm run lint     # run ESLint
 npm run typecheck # run the TypeScript type check
 ```
 
-## Build
+## 🔨Build
 
 To create a production build:
 
@@ -90,6 +90,6 @@ npm run build
 
 The output will be generated in the `dist/` folder.
 
-## Deployment
+## 👩🏻‍💻Deployment
 
 This app can be deployed to any static hosting platform such as Vercel, Netlify, or GitHub Pages. Since it is a Vite app, the standard build output is ready for deployment.
