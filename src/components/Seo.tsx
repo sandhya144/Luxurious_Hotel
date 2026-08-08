@@ -7,7 +7,7 @@ type SeoProps = {
   image?: string;
 };
 
-const ORIGIN = 'https://thewhitehousevaranasi.in';
+const ORIGIN = 'https://thewhitehousevaranasi.com';
 
 export default function Seo({ title, description, path = '/', image }: SeoProps) {
   const url = `${ORIGIN}${path}`;
@@ -36,7 +36,7 @@ export function HotelJsonLd() {
     '@type': 'Hotel',
     name: 'The White House Hotel',
     description:
-      'A family-run hotel 800 metres from Kashi Vishwanath Temple in Varanasi.',
+      'A family-run hotel 400 metres from Kashi Vishwanath Temple in Varanasi.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'D 39/20-21, Kodai Chowki, Nai Sarak',

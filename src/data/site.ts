@@ -397,7 +397,7 @@ export const hotel = {
   whatsappHref: 'https://wa.me/917398722222',
   whatsappMsgNo: "https://wa.me/917398722222?text=Hi%20there!%20I%20came%20through%20your%20website.%20I%27d%20like%20to%20inquire%20about%20room%20availability%20and%20book%20a%20stay.%20Could%20you%20please%20share%20the%20details%3F%20Thank%20you!",
   email: 'thewhitehouse1511@gmail.com',
-  rating: '4.8',
+  rating: '4.9',
   reviewsCount: '675+',
   guestsHosted: '5,000+',
   mapEmbed:
