@@ -1,8 +1,8 @@
-# The White House Hotel
+# 👩🏻‍💻 Hotel Website
 
-A polished React + Vite + TypeScript website for The White House Hotel in Varanasi. The experience is designed to feel warm, elegant, and easy to explore for pilgrims, families, and leisure travellers looking for a comfortable stay close to Kashi Vishwanath Temple.
+A polished React + Vite + TypeScript website for a Hotel in Varanasi. The experience is designed to feel warm, elegant, and easy to explore for pilgrims, families, and leisure travellers looking for a comfortable stay close to Kashi Vishwanath Temple.
 
-## Overview
+## 💡Overview
 
 This project showcases the hotel’s key offerings through a modern, responsive landing experience:
 
@@ -13,7 +13,7 @@ This project showcases the hotel’s key offerings through a modern, responsive 
 - guest reviews and FAQs
 - a WhatsApp-based reservation flow
 
-## Features
+## ⚙️Features
 
 - Responsive multi-page experience built with React Router
 - Smooth animated transitions with Framer Motion
@@ -22,7 +22,7 @@ This project showcases the hotel’s key offerings through a modern, responsive 
 - Easy reservation enquiry flow via WhatsApp
 - Lightweight image gallery and interactive lightbox
 
-## Tech Stack
+## 🛠️Tech Stack
 
 - React 18
 - TypeScript
@@ -34,7 +34,7 @@ This project showcases the hotel’s key offerings through a modern, responsive 
 - Lucide React
 - Supabase JS (included in dependencies)
 
-## Project Structure
+## ⚙️Project Structure
 
 ```text
 src/
@@ -45,7 +45,7 @@ src/
   sections/        # Page sections like facilities, testimonials, contact, and nearby spots
 ```
 
-## Getting Started
+## 🚀Getting Started
 
 ### Prerequisites
 
