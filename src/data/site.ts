@@ -1,19 +1,27 @@
-import gallery1 from '../assets/WhatsApp Image 1.jpeg';
-import gallery2 from '../assets/WhatsApp Image 2.jpeg';
-import gallery3 from '../assets/WhatsApp Image 3.jpeg';
-import gallery4 from '../assets/WhatsApp Image 4.jpeg';
-import gallery5 from '../assets/WhatsApp Image 5.jpeg';
-import gallery6 from '../assets/WhatsApp Image 6.jpeg';
-import gallery7 from '../assets/WhatsApp Image 7.jpeg';
-import gallery8 from '../assets/WhatsApp Image 8.jpeg';
-import gallery9 from '../assets/WhatsApp Image 9.jpeg';
-import gallery10 from '../assets/WhatsApp Image 10.jpeg';
-import gallery11 from '../assets/WhatsApp Image 11.jpeg';
-import gallery12 from '../assets/WhatsApp Image 12.jpeg';
-import gallery13 from '../assets/WhatsApp Image 13.jpeg';
+import gallery1 from '../assets/WhatsApp Image 21.jpeg';
+import gallery2 from '../assets/WhatsApp Image 22.jpeg';
+import gallery3 from '../assets/WhatsApp Image 23.jpeg';
+import gallery4 from '../assets/WhatsApp Image 24.jpeg';
+import gallery5 from '../assets/WhatsApp Image 25.jpeg';
+import gallery6 from '../assets/WhatsApp Image 33.jpeg';
+import gallery7 from '../assets/WhatsApp Image 34.jpeg';
+import gallery8 from '../assets/WhatsApp Image 26.jpeg';
+import gallery9 from '../assets/WhatsApp Image 27.jpeg';
+import gallery10 from '../assets/WhatsApp Image 28.jpeg';
+import gallery11 from '../assets/WhatsApp Image 29.jpeg';
+import gallery12 from '../assets/WhatsApp Image 30.jpeg';
+import gallery13 from '../assets/WhatsApp Image 31.jpeg';
 import gallery14 from '../assets/WhatsApp Image 14.jpeg';
-import gallery17 from '../assets/WhatsApp Image 17.jpeg'
-import gallery16 from '../assets/WhatsApp Image 16.jpeg'
+import gallery17 from '../assets/WhatsApp Image 17.jpeg';
+import gallery18 from '../assets/WhatsApp Image 18.jpeg';
+import gallery19 from '../assets/WhatsApp Image 31.jpeg';
+import gallery20 from '../assets/WhatsApp Image 32.jpeg';
+import gallery21 from '../assets/WhatsApp Image 33.jpeg';
+import gallery22 from '../assets/WhatsApp Image 34.jpeg';
+import gallery23 from '../assets/WhatsApp Image 35.jpeg';
+
+
+
 import food1 from '../assets/food 1.jpeg';
 import parking from '../assets/vehicles.jpeg'
 import building3 from '../assets/finalBuilding.jpeg';
@@ -61,7 +69,7 @@ export const rooms: Room[] = [
     blurb:
       'A comfortable, air-conditioned room built for two, with everything settled and ready after a day of darshan. Includes complimentary breakfast, and our staff is on hand to help plan your temple visits and sightseeing at no extra charge.',
     amenitiesInline: 'AC, Complimentary breakfast, Darshan assistance',
-    image: gallery6,
+    image: gallery21,
     alt: 'Double occupancy AC room with a neatly made bed and warm ambient lighting',
   },
   {
@@ -73,7 +81,7 @@ export const rooms: Room[] = [
     blurb:
       'A little extra room for three, with cool air, a restful bed setup, and breakfast included every morning. Our staff offers complimentary help with darshan and sightseeing, so your day is sorted before it even begins.',
     amenitiesInline: 'AC, Complimentary breakfast, Darshan assistance',
-    image: gallery8,
+    image: gallery22,
     alt: 'Triple occupancy AC room with comfortable bedding and soft lighting',
   },
   {
@@ -85,7 +93,7 @@ export const rooms: Room[] = [
     blurb:
       'A spacious, air-conditioned room made for families or groups of four travelling together, with complimentary breakfast to start the day right. Lunch and dinner can be arranged on request, and our staff is always ready to help with darshan and sightseeing plans.',
     amenitiesInline: 'AC, Complimentary breakfast, Darshan assistance, Meals on request',
-    image: gallery10,
+    image: gallery5,
     alt: 'Four occupancy AC room with multiple beds and warm decor',
   },
 ];
@@ -104,11 +112,11 @@ export const glimpses = [
     alt: "Room",
   },
   {
-    image: gallery16,
+    image: gallery6,
     alt: "Restaurant",
   },
   {
-    image: gallery6,
+    image: gallery7,
     alt: "Lobby",
   },
   
@@ -119,38 +127,72 @@ export const galleryImages = [
     image: building3,
     alt: "Exterior",
   },
-  {
+   {
+    image: gallery7,
+    alt: "img1",
+  },
+   {
     image: gallery5,
-    alt: "Exterior",
+    alt: "img2",
+  },
+   
+  {
+    image: gallery9,
+    alt: "img3",
   },
   {
+    image: gallery4,
+    alt: "img4",
+  },
+   {
     image: gallery6,
-    alt: "Exterior",
+    alt: "img5",
   },
   {
     image: gallery8,
-    alt: "Exterior",
+    alt: "img6",
   },
+
+  {
+    image: gallery2,
+    alt: "img7",
+  },
+  
   {
     image: gallery14,
     alt: "Reception",
   },
   {
-    image: gallery16,
+    image: gallery23,
+    alt: "Jhoomar",
+  },
+  {
+    image: gallery20,
     alt: "Exterior",
   },
   {
-    image: gallery10,
-    alt: "Exterior",
+    image: gallery18,
+    alt: "gallery",
   },
   {
-    image: gallery17,
-    alt: "Washroom",
+    image: gallery3,
+    alt: "yellow",
   },
-  {
+  
+   {
     image: gallery11,
     alt: "Exterior",
   },
+  
+  {
+    image: gallery19,
+    alt: "Washroom1",
+  },
+  {
+    image: gallery1,
+    alt: "Exterior",
+  },
+  
   {
     image: food1,
     alt: "Exterior",
