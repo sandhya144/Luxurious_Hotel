@@ -16,7 +16,7 @@ import gallery17 from '../assets/WhatsApp Image 17.jpeg'
 import gallery16 from '../assets/WhatsApp Image 16.jpeg'
 import food1 from '../assets/food 1.jpeg';
 import parking from '../assets/vehicles.jpeg'
-import building3 from '../assets/Homestay 2.jpeg';
+import building3 from '../assets/finalBuilding.jpeg';
 
 
 

@@ -30,7 +30,7 @@ export default function Home() {
       <Glimpses />
       <TrustLine />
       <WelcomePillars />
-      <MeetHost />
+      {/* <MeetHost /> */}
       <RoomsTeaser />
       <Facilities />
       <Nearby />

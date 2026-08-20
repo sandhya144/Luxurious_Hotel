@@ -100,7 +100,7 @@ const [isMuted, setIsMuted] = useState(false);
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.55 }}
           className="mt-4 max-w-2xl text-base font-light leading-relaxed text-ivory/90 sm:text-lg"
         >
-Located a 5-minute walk from Kashi Vishwanath Temple, our homestay in Varanasi blends heartfelt hospitality with the comfort of home — so close to devotion, yet so far from the noise.
+          Located a 5-minute walk from Kashi Vishwanath Temple, our property in Varanasi blends heartfelt hospitality with the comfort of home — so close to devotion, yet so far from the noise.
           </motion.p>
 
         <motion.div
