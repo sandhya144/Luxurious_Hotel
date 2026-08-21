@@ -13,7 +13,7 @@ export default function Glimpses() {
   return (
     <section className="bg-ivory py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <Reveal as="p" className="mb-10 text-center font-medium smallcaps text-xs text-brass-deep">
+        <Reveal as="p" className=" text-center font-medium smallcaps text-xs text-brass-deep">
           A Few Glimpses
         </Reveal>
               <div style={{ height: '600px', position: 'relative' }}>

@@ -23,6 +23,8 @@ import gallery23 from '../assets/WhatsApp Image 35.jpeg';
 
 
 import food1 from '../assets/food 1.jpeg';
+import food2 from '../assets/food 2.jpg';
+import food3 from '../assets/food 3.jpg';
 import parking from '../assets/vehicles.jpeg'
 import building3 from '../assets/finalBuilding.jpeg';
 
@@ -124,7 +126,7 @@ export const glimpses = [
     alt: "Reception",
   },
   {
-    image: food1,
+    image: food2,
     alt: "Foods",
   },
   {
@@ -209,6 +211,10 @@ export const galleryImages = [
   
   {
     image: food1,
+    alt: "Exterior",
+  },
+  {
+    image: food3,
     alt: "Exterior",
   },
   {
