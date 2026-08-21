@@ -105,20 +105,34 @@ export const heroPoster =
 export const glimpses = [
   {
     image: building3,
-    alt: "Exterior",
+    alt: "Our Stay",
   },
    {
-    image: gallery5,
-    alt: "Room",
+    image: gallery7,
+    alt: "Rooms",
   },
   {
     image: gallery6,
-    alt: "Restaurant",
+    alt: "Rooms",
   },
   {
-    image: gallery7,
-    alt: "Lobby",
+    image: gallery5,
+    alt: "Rooms",
   },
+  {
+    image: gallery14,
+    alt: "Reception",
+  },
+  {
+    image: food1,
+    alt: "Foods",
+  },
+  {
+    image: gallery9,
+    alt: "Rooms",
+  },
+
+  
   
 ];
 
