@@ -1,33 +1,39 @@
 import { Link } from 'react-router-dom';
 import Reveal from '@/components/Reveal';
 import { glimpses } from '@/data/site';
-import CircularGallery from '@/components/CircularGallery';
+import BounceCards from '@/components/BounceCard';
 
+const transformStyles = [
+  "rotate(5deg) translate(-150px)",
+  "rotate(0deg) translate(-70px)",
+  "rotate(-5deg)",
+  "rotate(5deg) translate(70px)",
+  "rotate(-5deg) translate(150px)",
+];
 
 export default function Glimpses() {
-  const galleryItems = glimpses.map((g) => ({
-  image: g.image,
-  text: g.alt,
-}));
-
+  const images = glimpses.slice(0, 5).map((g) => g.image);
   return (
     <section className="bg-ivory py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal as="p" className=" text-center font-medium smallcaps text-xs text-brass-deep">
           A Few Glimpses
         </Reveal>
-              <div style={{ height: '600px', position: 'relative' }}>
-                <CircularGallery
-                  items={galleryItems}
-                  bend={1}
-                  textColor="#ffffff"
-                  borderRadius={0.05}
-                  scrollEase={0.05}
-                  fontUrl=""
-                  font="bold 30px Orbitron"
-                  scrollSpeed={2}
-              />
-              </div>
+
+          <div className="mt-12 flex justify-center">
+            <BounceCards
+              className="custom-bounceCards"
+              images={images}
+              containerWidth={500}
+              containerHeight={250}
+              animationDelay={1}
+              animationStagger={0.08}
+              easeType="elastic.out(1, 0.5)"
+              transformStyles={transformStyles}
+              enableHover
+            />
+            </div>
+             
 
         {/* <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
           {glimpses.map((g, i) => (

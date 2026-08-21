@@ -105,7 +105,7 @@ export const heroPoster =
   'https://images.pexels.com/photos/8112552/pexels-photo-8112552.jpeg?auto=compress&cs=tinysrgb&w=1920';
 
 export const glimpses = [
-  {
+   {
     image: building3,
     alt: "Our Stay",
   },
@@ -125,10 +125,7 @@ export const glimpses = [
     image: gallery14,
     alt: "Reception",
   },
-  {
-    image: food2,
-    alt: "Foods",
-  },
+   
   {
     image: gallery9,
     alt: "Rooms",
