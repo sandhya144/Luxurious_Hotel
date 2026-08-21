@@ -118,20 +118,9 @@ export const glimpses = [
     alt: "Rooms",
   },
   {
-    image: gallery5,
-    alt: "Rooms",
-  },
-  {
-    image: gallery14,
-    alt: "Reception",
-  },
-   
-  {
     image: gallery9,
     alt: "Rooms",
-  },
-
-  
+  }, 
   
 ];
 
