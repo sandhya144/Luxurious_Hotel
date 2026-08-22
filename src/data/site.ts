@@ -259,7 +259,7 @@ export const nearby = [
   },
   {
     name: 'Ganga Aarti',
-    distance: '~800 km',
+    distance: '~800m',
     note: 'The evening fire ceremony on the riverbank.',
     image: ganga,
     alt: 'Ganga Aarti ceremony with fire lamps along the Ganges',
