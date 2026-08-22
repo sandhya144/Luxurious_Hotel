@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-5">
             <Logo />
             <p className="max-w-xs text-sm leading-relaxed text-charcoal-soft">
-              A family-run homestay in the old city of Varanasi provides a warm, clean, quiet
+              A family-run accomodation unit in the old city of Varanasi provides a warm, clean, quiet
               stay, steps from Kashi Vishwanath Temple and the ghats.
             </p>
           </div>
