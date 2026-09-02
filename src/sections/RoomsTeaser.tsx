@@ -9,7 +9,7 @@ export default function RoomsTeaser() {
     <section id="rooms" className="bg-ivory py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="Our Rooms" title="A Room for Every Kind of Stay">
-          Four room types, each kept spotless and made for real rest after a day in the city.
+          Three room types, each kept spotless and made for real rest after a day in the city.
         </SectionHeading>
 
         <div className="mt-16 space-y-20">
