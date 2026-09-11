@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Home from '@/pages/Home';
 import Rooms from '@/pages/Rooms';
 import Gallery from '@/pages/Gallery';
+import { AllSeoSchemas } from './components/Seo';
 
 
 function AnimatedRoutes() {
@@ -28,5 +29,10 @@ function AnimatedRoutes() {
 }
 
 export default function App() {
-  return <AnimatedRoutes />;
+  return ( 
+      <>
+      <AllSeoSchemas />
+      <AnimatedRoutes />
+    </>
+  );
 }

@@ -42,7 +42,7 @@ export default function Facilities() {
         <section id="facilities" className="border-y border-brass-line/40 bg-ivory scroll-mt-18 py-24 md:py-32">
               <div className="mx-auto max-w-3xl px-6 text-center">
 
-               <SectionHeading align="center" eyebrow="Amenties" title="Every Detail, Taken Care Of">
+               <SectionHeading align="center" eyebrow="Amenities" title="Every Detail, Taken Care Of">
                   Comfortable rooms, caring staff, and quiet conveniences — everything provided for an effortless stay.
                 </SectionHeading>
 

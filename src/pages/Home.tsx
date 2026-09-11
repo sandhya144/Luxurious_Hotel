@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import Seo, { HotelJsonLd } from '@/components/Seo';
+import Seo from '@/components/Seo';
 import Hero from '@/components/Hero';
 import Glimpses from '@/sections/Glimpses';
 import TrustLine from '@/sections/TrustLine';
@@ -25,7 +25,6 @@ export default function Home() {
         description="A family-run hotel 400 metres from Kashi Vishwanath Temple in Varanasi — where every guest is looked after like one of our own."
         path="/"
       />
-      <HotelJsonLd />
       <Hero />
       <Glimpses />
       <TrustLine />

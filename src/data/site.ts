@@ -287,32 +287,6 @@ export const nearby = [
   },
 ];
 
-// export const testimonials = [
-//   {
-//     quote:
-//       'The owner treated us like family. We arrived tired from the train and within minutes there was hot chai, a clean room, and a real plan for our temple visit the next morning.',
-//     name: 'Aarthi & Venkat',
-//     trip: 'Couples trip · Bengaluru',
-//   },
-//   {
-//     quote:
-//       'The staff went far beyond what you would expect. They arranged our airport pickup, helped with the aarti boat, and remembered every small thing we asked for. Spotless rooms too.',
-//     name: 'Rohit Mehta',
-//     trip: 'Solo pilgrimage · Delhi',
-//   },
-//   {
-//     quote:
-//       'We travelled with two young children and the family suite was perfect — two connecting rooms, extra beds ready, and the kids were made to feel completely welcome.',
-//     name: 'The Khan family',
-//     trip: 'Family stay · Lucknow',
-//   },
-//   {
-//     quote:
-//       'The location is the thing. Eight minutes walking and you are at Kashi Vishwanath, and the ghats are just a little further. Coming back to a quiet, clean room each evening made all the difference.',
-//     name: 'Priya Nair',
-//     trip: 'Temple visit · Kochi',
-//   },
-// ];
 
 export const testimonials = [
   {
@@ -427,7 +401,7 @@ export const navLinks = [
   { label: 'Home', to: '/', section: 'top' },
   { label: 'Rooms', to: '/rooms', section: 'rooms' },
   { label: 'Gallery', to: '/gallery', section: 'gallery' },
-  { label: 'Amenties', to: '/#facilities', section: 'facilities' },
+  { label: 'Amenities', to: '/#facilities', section: 'facilities' },
   { label: 'Reviews', to: '/#reviews', section: 'reviews' },
   { label: 'Contact', to: '/#contact', section: 'contact' },
 ];
