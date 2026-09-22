@@ -31,10 +31,8 @@ export function AllSeoSchemas() {
     "@context": "https://schema.org",
 
     "@graph": [
-
-      // =========================
+  
       // WEBSITE
-      // =========================
 
       {
         "@type": "WebSite",
@@ -50,10 +48,7 @@ export function AllSeoSchemas() {
         },
       },
 
-
-      // =========================
       // HOTEL
-      // =========================
 
       {
         "@type": "Hotel",
@@ -122,8 +117,7 @@ export function AllSeoSchemas() {
         },
 
 
-        // IMPORTANT:
-        // Only use real/current review data.
+        // IMPORTANT:  Only use real/current review data.
 
         aggregateRating: {
 
@@ -221,4 +215,3 @@ export function AllSeoSchemas() {
 
   );
 }
-
