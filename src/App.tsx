@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Home from '@/pages/Home';
 import Rooms from '@/pages/Rooms';
 import Gallery from '@/pages/Gallery';
-import { AllSeoSchemas } from './components/Seo';
+import { AllSeoSchemas } from './components/AllSeoSchema';
 
 
 function AnimatedRoutes() {

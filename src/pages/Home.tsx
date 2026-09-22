@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="The White House Hotel · Varanasi — A Warm Stay, Steps from Kashi"
+        title="The White House · Varanasi — A Warm Stay, Steps from Kashi"
         description="A family-run hotel 400 metres from Kashi Vishwanath Temple in Varanasi — where every guest is looked after like one of our own."
         path="/"
       />

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { hotel, navLinks } from '@/data/site';
+import { Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -57,6 +58,37 @@ export default function Footer() {
       Call
     </a>
   </div>
+
+    {/* Social Media */}
+
+ {/* Social Media */}
+<div className="pt-4">
+  <p className="smallcaps mb-3 text-sm font-medium text-brass-deep">
+    Follow Us
+  </p>
+
+  <div className="flex items-center gap-3">
+    <a
+      href="https://www.instagram.com/thewhitehousevaranasi/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow The White House Varanasi on Instagram"
+      className="inline-flex h-8 w-8 items-center justify-center rounded-sm border border-brass-line/80 bg-brass-deep/[0.06] text-charcoal-soft transition-all duration-300 hover:border-brass-deep/60 hover:bg-brass-deep/[0.12] hover:text-charcoal"
+    >
+      <Instagram size={18} strokeWidth={1.7} />
+    </a>
+
+    <a
+      href="https://www.facebook.com/profile.php?id=61594262393757"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow The White House Varanasi on Facebook"
+      className="inline-flex h-8 w-8 items-center justify-center rounded-sm border border-brass-line/80 bg-brass-deep/[0.06] text-charcoal-soft transition-all duration-300 hover:border-brass-deep/60 hover:bg-brass-deep/[0.12] hover:text-charcoal"
+    >
+      <Facebook size={18} strokeWidth={1.7} />
+    </a>
+  </div>
+</div>
       
           </div>
         </div>
