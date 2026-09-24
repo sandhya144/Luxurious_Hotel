@@ -112,7 +112,7 @@ export function AllSeoSchemas() {
 
           "@type": "Rating",
 
-          ratingValue: "4.5",
+          ratingValue: "4.5+",
 
         },
 

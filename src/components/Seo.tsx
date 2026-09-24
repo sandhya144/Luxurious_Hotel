@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 
 export const ORIGIN = "https://thewhitehousevaranasi.com";
 
-export const SITE_NAME = "The White House Varanasi";
+export const SITE_NAME = "The White House Varanasi - Hotel Near Kashi Vishwanath Temple";
 
 export const PHONE = "+91 73987 22222";
 
