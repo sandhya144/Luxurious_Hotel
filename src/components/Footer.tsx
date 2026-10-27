@@ -72,7 +72,7 @@ export default function Footer() {
       href="https://www.instagram.com/thewhitehousevaranasi/"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Follow The White House Varanasi on Instagram"
+      aria-label="Follow The White House Hotel on Instagram"
       className="inline-flex h-8 w-8 items-center justify-center rounded-sm border border-brass-line/80 bg-brass-deep/[0.06] text-charcoal-soft transition-all duration-300 hover:border-brass-deep/60 hover:bg-brass-deep/[0.12] hover:text-charcoal"
     >
       <Instagram size={18} strokeWidth={1.7} />
@@ -82,7 +82,7 @@ export default function Footer() {
       href="https://www.facebook.com/profile.php?id=61594262393757"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Follow The White House Varanasi on Facebook"
+      aria-label="Follow The White House Hotel on Facebook"
       className="inline-flex h-8 w-8 items-center justify-center rounded-sm border border-brass-line/80 bg-brass-deep/[0.06] text-charcoal-soft transition-all duration-300 hover:border-brass-deep/60 hover:bg-brass-deep/[0.12] hover:text-charcoal"
     >
       <Facebook size={18} strokeWidth={1.7} />
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-brass-line/40 pt-7 text-xs text-charcoal-soft sm:flex-row sm:items-center">
-          <p>© {year} The White House, Varanasi. All rights are reserved.</p>
+          <p>© {year} The White House Hotel, Varanasi. All rights are reserved.</p>
           {/* <p className="smallcaps">Family-run · Since 2009</p> */}
         </div>
       </div>
